@@ -167,7 +167,7 @@
     position: absolute;
     right: 0;
     bottom: 30px;
-}
+  }
 }
 @media only screen and (max-width: 1250px) {
   .header_left_blog {
@@ -225,12 +225,50 @@
     padding-right: 30px;
   }
   .reviewer_name h3 {
-     margin-bottom: 40px;
+    margin-bottom: 40px;
   }
   .reviewer_review p {
     line-height: 100%;
   }
   .about_review p {
     margin-bottom: 0;
+  }
+}
+
+@media only screen and (max-width: 530px) {
+  .founder_authograph {
+    position: static;
+    margin-bottom: 0;
+    margin-top: 20px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+  }
+  .founder_authograph img {
+    width: 200px;
+  }
+  .history_brand {
+    padding-top: 0px;
+  }
+  .header_right_block {
+    padding-bottom: 0;
+  }
+}
+
+@media only screen and (max-width: 430px) {
+  .history_brand_text h1 {
+    margin: 10px 0;
+    font-size: 25px;
+  }
+  .reviewer_name h3 {
+    font-size: 30px;
+    line-height: 100%;
+  }
+  .reviewer_review p {
+    margin-bottom: 20px;
+    font-size: 20px;
+  }
+  .reviews {
+    padding-bottom: 20px;
   }
 }

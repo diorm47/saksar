@@ -15,7 +15,7 @@ function ApplicationForm() {
     <div className="footer_form">
       <div className="footer_title">
         <h3>
-          Если нужного товара нет в наличии, отправьте заявку на <br />{" "}
+          Если нужного товара нет в наличии, отправьте заявку на <br />
           предзаказ в этой форме
         </h3>
       </div>

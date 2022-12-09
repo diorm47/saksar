@@ -159,3 +159,9 @@ nav {
     width: 100%;
   }
 }
+
+@media only screen and (max-width: 500px) {
+  .nav_basket {
+    right:  25%;
+  }
+}
