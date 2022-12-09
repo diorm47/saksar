@@ -162,6 +162,20 @@ nav {
 
 @media only screen and (max-width: 500px) {
   .nav_basket {
-    right:  25%;
+    right: 25%;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .nav_basket svg {
+    width: 25px;
+    height: 25px;
+  }
+  .nav_burger_menu {
+    width: 30px;
+    height: 30px;
+  }
+  .nav_basket {
+    right: 20%;
   }
 }
