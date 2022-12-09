@@ -64,18 +64,20 @@ function AboutItem() {
             <div className="about_item_img">
               <img src={item.about_img} alt={item.name} />
             </div>
-            <div className="music_play_stop">
-              {!playing || (
-                <div className="play_music" onClick={stopMusic}>
-                  <img src={playing_icon} alt="playing_icon" />
-                </div>
-              )}
-              {!stoping || (
-                <div className="stop_music" onClick={playMusic}>
-                  <img src={stop_icon} alt="stop_icon" />
-                </div>
-              )}
-            </div>
+            {!item.music || (
+              <div className="music_play_stop">
+                {!playing || (
+                  <div className="play_music" onClick={stopMusic}>
+                    <img src={playing_icon} alt="playing_icon" />
+                  </div>
+                )}
+                {!stoping || (
+                  <div className="stop_music" onClick={playMusic}>
+                    <img src={stop_icon} alt="stop_icon" />
+                  </div>
+                )}
+              </div>
+            )}
           </div>
           <div className="about_right_block">
             <div className="about_item_type">

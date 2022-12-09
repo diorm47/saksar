@@ -85,3 +85,77 @@ nav {
   line-height: 19px;
   color: #000000;
 }
+.nav_burger_menu {
+  display: none;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 1720px) {
+  .nav_basket {
+    right: 2%;
+  }
+}
+
+@media only screen and (max-width: 1550px) {
+  .nav_wrapper {
+    width: 100%;
+  }
+  nav {
+    width: 100%;
+    padding: 0 30px;
+  }
+  .nav_basket {
+    right: 1%;
+  }
+  .nav_right_items {
+    padding-right: 100px;
+  }
+}
+
+@media only screen and (max-width: 1020px) {
+  .nav_left_items,
+  .nav_right_items {
+    display: none;
+  }
+  .nav_burger_menu {
+    display: flex;
+    width: 40px;
+    height: 40px;
+  }
+  .nav_burger_menu img {
+    width: 100%;
+  }
+  .nav_basket {
+    right: 16%;
+  }
+}
+
+@media only screen and (max-width: 620px) {
+  .nav_basket {
+    right: 17%;
+  }
+
+  .nav_logo h1 {
+    font-size: 35px;
+  }
+  .founder_img {
+    width: 100%;
+  }
+  .founder_img img {
+    width: 100%;
+  }
+  .before_text_line {
+    display: none;
+  }
+  .home_products_wrapper {
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .header_right_block {
+    width: 100%;
+  }
+  .header_right_block img {
+    width: 100%;
+  }
+}

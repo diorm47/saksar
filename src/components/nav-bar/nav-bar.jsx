@@ -1,7 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import "./nav-bar.css";
-
+import burger_menu from "../../assets/icons/menu_icon.png";
 import { ReactComponent as BasketIcon } from "../../assets/icons/basket-icon.svg";
 import { useSelector } from "react-redux";
 
@@ -45,14 +45,15 @@ function NavBar() {
             </div>
           </NavLink>
         </div>
-
+        <div className="nav_burger_menu">
+          <img src={burger_menu} alt="burger_menu" />
+        </div>
         <div className="nav_basket">
           {!inCart.length || (
             <div className="selected_length">
               <p>{inCart.length}</p>
             </div>
           )}
-
           <NavLink to="/cart">
             <BasketIcon />
           </NavLink>

@@ -62,3 +62,17 @@
   background: #000000c2;
   transition: all 0.4s ease;
 }
+
+@media only screen and (max-width: 1600px) {
+  .footer_form {
+    width: 100%;
+    padding: 0 20px;
+  }
+  .footer_form form {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .footer_form form div {
+    margin-bottom: 20px;
+  }
+}
