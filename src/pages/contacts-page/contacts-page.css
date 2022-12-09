@@ -1,0 +1,169 @@
+.contacts_title h1 {
+  margin-top: 150px;
+  margin-bottom: 250px;
+  font-weight: 700;
+  font-size: 58px;
+  line-height: 69px;
+  text-transform: uppercase;
+  color: #000000;
+  text-align: center;
+}
+
+.contacts_form_wrapper {
+  width: 1020px;
+  margin: 0 auto;
+}
+
+.contacts_form_wrapper h1 {
+  margin-bottom: 43px;
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 45px;
+  text-transform: uppercase;
+  color: #000000;
+}
+.contacts_form_wrapper p {
+  margin-bottom: 150px;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 33px;
+  text-transform: uppercase;
+  color: #000000;
+}
+.contacts_form div {
+  margin-bottom: 50px;
+}
+.contacts_form div input {
+  width: 100%;
+  text-indent: 5px;
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #918f8f;
+  background: transparent;
+  border: none;
+  padding: 15px 0;
+  outline: none;
+  border-bottom: 1px solid #000000;
+}
+.contacts_form div span{ 
+    color: red;
+    margin-top: 4px;
+
+}
+.contacts_form .submit_btn {
+  width: 297px;
+  height: 73px;
+  margin: 0 auto;
+  margin-top: 60px;
+  text-indent: 0;
+  background: #000000;
+  cursor: pointer;
+  font-family: "Jura";
+  font-size: 26px;
+  line-height: 156.8%;
+  text-align: center;
+  color: #ffffff;
+  transition: all 0.4s ease;
+  border: none;
+  border-radius: 10px;
+  margin-bottom: 50px;
+}
+.contacts_form .submit_btn:hover {
+  background: #000000c2;
+  transition: all 0.4s ease;
+}
+.contacts_submit_btn {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.personal_inf p {
+  margin-bottom: 90px;
+  font-weight: 400;
+  font-size: 15.8px;
+  line-height: 19px;
+  text-transform: uppercase;
+  color: #000000;
+  opacity: 0.58;
+  text-align: center;
+}
+
+.contacts_cart {
+  width: 100%;
+  background: url(../../assets//images/cart.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 125px 0 135px 230px;
+}
+
+.contacts_block {
+  width: 663px;
+  height: 520px;
+  padding: 75px 85px 0 75px;
+  background: #ffffff;
+}
+.contacts_block_title h1 {
+  margin-bottom: 50px;
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 45px;
+  text-transform: uppercase;
+  color: #000000;
+}
+.contacts_block p,
+a {
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 170.8%;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.contacts_icons {
+  display: flex;
+  align-items: center;
+}
+.contacts_icons img {
+  width: 40px;
+  margin-top: 60px;
+  margin-left: 20px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+.contacts_icons img:hover {
+  transition: all 0.5s ease;
+  transform: translateY(-6px);
+}
+
+.company_documents {
+  width: 1081px;
+  margin: 0 auto;
+  padding: 55px 0 100px;
+}
+
+.company_documents p {
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 33px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.contacts_page footer {
+  background: #000000;
+  color: #ffffff;
+}
+.contacts_page footer .footer_links div p,
+.contacts_page footer .footer_nav_list .footer_nav_menu_item p,
+.contacts_page footer .footer_logo {
+  color: #ffffff;
+}
+.contacts_page footer .footer_instagram svg * {
+    fill: #ffffff;
+}

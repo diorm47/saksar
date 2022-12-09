@@ -1,0 +1,7 @@
+.slick-slide,
+.slick-active,
+.slick-current {
+  width: 376px !important ;
+  height: 560px !important;
+  margin-right: 10px;
+}

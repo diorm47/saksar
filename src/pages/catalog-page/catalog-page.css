@@ -1,0 +1,29 @@
+.catalog_page {
+  width: 100%;
+  height: 100%;
+  padding-top: 240px;
+  padding-bottom: 50px;
+}
+.catalog_wrapper {
+  width: 1547px;
+  margin: 0 auto;
+}
+
+.catalog_title h1 {
+  margin-bottom: 115px;
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 45px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.catalog_items {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 15px;
+}
+.catalog_application {
+  margin-top: 200px;
+}

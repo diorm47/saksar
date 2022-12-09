@@ -1,0 +1,146 @@
+.header_wrapper {
+  width: 100%;
+  display: flex;
+}
+
+.header_left_blog {
+  width: 46%;
+  overflow: hidden;
+}
+.header_left_blog img {
+  width: 100%;
+  height: 100%;
+  transition: all 1s ease;
+}
+
+.header_left_blog img:hover {
+  transition: all 1s ease;
+  transform: scale(1.05);
+}
+.header_text {
+  display: flex;
+  align-items: center;
+  margin-top: 60px;
+  margin-bottom: 32px;
+}
+.header_text h1 {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 26px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.before_text_line {
+  border: 2px solid #000;
+  background: #000;
+  width: 30%;
+  position: absolute;
+  left: -80px;
+}
+
+.header_right_block {
+  width: 54%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.history_brand {
+  background: #ffffff;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-top-right-radius: 20px;
+  padding-top: 70px;
+}
+
+.history_brand_wrapper {
+  width: 1547px;
+  margin: 0 auto;
+  display: flex;
+  position: relative;
+}
+
+.history_brand_text h1 {
+  margin-bottom: 22px;
+  font-weight: 600;
+  font-size: 54.1456px;
+  line-height: 156.8%;
+  color: #000000;
+}
+
+.history_brand_text p {
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 150%;
+  color: #000000;
+  margin-bottom: 35px;
+}
+
+.founder_authograph {
+  position: absolute;
+  right: -90px;
+  bottom: 30px;
+}
+
+.home_products {
+  width: 100%;
+  padding-top: 80px;
+  padding-bottom: 100px;
+}
+.home_products_wrapper {
+  width: 1547px;
+  margin: 0 auto;
+}
+
+.home_products_title h3 {
+  font-weight: 600;
+  font-size: 28.9757px;
+  line-height: 156.8%;
+  text-transform: uppercase;
+  color: #6f6f6f;
+  margin-bottom: 26px;
+}
+
+.home_product_items {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.reviews {
+  width: 100%;
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 45px 0 70px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.reviewer_name h3 {
+  margin-bottom: 91px;
+  font-weight: 700;
+  font-size: 41.2346px;
+  line-height: 156.8%;
+  text-align: center;
+  color: #000000;
+}
+
+.reviewer_review p {
+  margin-bottom: 76px;
+  font-weight: 500;
+  font-size: 28.9757px;
+  line-height: 156.8%;
+  text-align: center;
+  color: #000000;
+}
+.about_review p {
+  font-weight: 700;
+  font-size: 28.9757px;
+  line-height: 156.8%;
+  text-align: center;
+  color: #000000;
+}

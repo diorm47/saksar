@@ -1,0 +1,172 @@
+.cart_page {
+  width: 1547px;
+  margin: 0 auto;
+  padding-top: 140px;
+}
+
+.cart_navigation p {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 156.8%;
+  color: #000000;
+  opacity: 0.5;
+  margin-bottom: 20px;
+}
+
+.cart_page_title h1 {
+  margin-bottom: 60px;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 156.8%;
+  color: #000000;
+}
+
+.empty_cart_message {
+  margin-top: 150px;
+  margin-bottom: 120px;
+  font-size: 20px;
+}
+
+.in_cart_item {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.34);
+  padding-bottom: 60px;
+  padding-top: 60px;
+}
+.incart_item_img {
+  width: 250px;
+  height: 220px;
+  overflow: hidden;
+}
+.incart_item_img img {
+  width: 100%;
+}
+.in_cart_description {
+  width: 50%;
+}
+.in_cart_description p {
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 156.8%;
+  color: #000000;
+  opacity: 0.5;
+}
+.in_cart_description h4 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 156.8%;
+  color: #000000;
+  margin-bottom: 10px;
+}
+
+.diffusor_incart_descr p {
+  font-size: 17px;
+  text-transform: capitalize;
+}
+.diffusor_incart_descr span {
+  font-weight: 800;
+  color: #000000;
+  opacity: 1;
+}
+.other_incart_items p {
+  font-size: 12px;
+}
+.other_incart_items span {
+  font-weight: 800;
+  color: #000000;
+  opacity: 1;
+}
+
+.in_item_calculator {
+  width: 81px;
+  height: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 58px;
+  padding: 0 15px;
+}
+
+.in_item_calculator p {
+  font-weight: 600;
+  font-size: 18.6465px;
+  line-height: 156.8%;
+  text-align: center;
+  color: #ffffff;
+  cursor: pointer;
+}
+.in_cart_item_cost p {
+  font-weight: 600;
+  font-size: 38.8468px;
+  line-height: 156.8%;
+  text-align: center;
+  color: #000000;
+  margin-bottom: 60px;
+}
+
+.del_item_from_cart button {
+  width: 130px;
+  height: 50px;
+  font-family: "Jura";
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 156.8%;
+  text-align: center;
+  color: #000000;
+  opacity: 0.5;
+  cursor: pointer;
+  border-radius: 20px;
+  border: none;
+  transition: all 0.5s ease;
+  background: transparent;
+}
+.del_item_from_cart button:hover {
+  transition: all 0.5s ease;
+  background: #c0bdbd;
+}
+
+.checkout_cart {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.total_summ {
+  width: 297px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 60px 0 40px;
+}
+.total_summ p {
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 156.8%;
+  color: #000000;
+}
+.checkout_btn button {
+  width: 297px;
+  height: 73px;
+  background: #000000;
+  font-family: "Jura";
+  border-radius: 10px;
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 156.8%;
+  text-align: center;
+  color: #ffffff;
+  cursor: pointer;
+  margin-bottom: 40px;
+  transition: all 0.4s ease;
+  border: none;
+}
+
+.checkout_btn button:hover {
+  background: #000000c2;
+  transition: all 0.4s ease;
+}

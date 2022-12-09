@@ -1,0 +1,25 @@
+.filtered_products {
+  width: 1547px;
+  margin: 0 auto;
+  padding: 150px 0 100px;
+}
+
+.filtered_product_title h1 {
+  margin-bottom: 80px;
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 45px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.filtered_products_carts {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 15px;
+}
+
+.nothing_message {
+  margin-top: 30px;
+  font-size: 19px;
+}

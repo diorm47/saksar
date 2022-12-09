@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Jura:wght@500&family=Open+Sans:wght@300&family=Poppins:wght@300;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Jura", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: #f5f5f5;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+a {
+  text-decoration: none;
+}
+a,
+p,
+h1,
+h2,
+h3,
+span,
+input,
+img,
+select,
+div,
+button,
+svg {
+  -webkit-tap-highlight-color: transparent;
+}

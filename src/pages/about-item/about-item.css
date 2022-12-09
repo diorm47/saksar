@@ -1,0 +1,161 @@
+.about_item_wrapper {
+  width: 1547px;
+  margin: 0 auto;
+}
+
+.about_item_title h1 {
+  margin-top: 200px;
+  margin-bottom: 100px;
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 45px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.about_item_content {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 120px;
+}
+
+.about_item_img {
+  width: 588px;
+  height: 783px;
+  overflow: hidden;
+}
+.about_item_img img {
+  width: 100%;
+  transition: all 1s ease;
+}
+
+.about_item_img img:hover {
+  transition: all 1s ease;
+  transform: scale(1.05);
+}
+
+.about_item_type p {
+  margin-bottom: 18px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #000000;
+  opacity: 0.5;
+}
+
+.about_item_name h2 {
+  margin-bottom: 18px;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 83px;
+  text-transform: uppercase;
+  color: #000000;
+}
+.about_right_block {
+  width: 50%;
+}
+
+.about_item_description p {
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 130%;
+  color: #464444;
+  margin: 20px 0 10px;
+}
+.about_item_description span {
+  font-weight: 600;
+  font-size: 25px;
+  color: black;
+}
+
+.diffuzor_notes div p {
+  text-transform: capitalize;
+}
+.about_item_cost p {
+  font-weight: 700;
+  font-size: 70px;
+  line-height: 83px;
+  text-transform: uppercase;
+  color: #000000;
+  margin-top: 60px;
+}
+
+.about_add_to_cart button {
+  margin-top: 60px;
+  width: 297px;
+  height: 73px;
+  background: #000000;
+  border-radius: 10px;
+  font-family: "Jura";
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 156.8%;
+  text-align: center;
+  color: #ffffff;
+  cursor: pointer;
+  transition: all 0.4s ease;
+  border: none;
+}
+
+.about_add_to_cart button:hover {
+  background: #000000c2;
+  transition: all 0.4s ease;
+}
+
+.carousel_block {
+  width: 100%;
+}
+
+.carousel_block {
+  margin-top: 100px;
+  margin-bottom: 20px;
+}
+.carousel_title h3 {
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 45px;
+  text-transform: uppercase;
+  color: #000000;
+  margin-bottom: 90px;
+}
+
+.music_play_stop {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.play_music {
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+}
+.play_music img {
+  width: 100%;
+}
+.stop_music {
+  width: 60px;
+  height: 60px;
+  border: 2px solid #000;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.stop_music img {
+  width: 30px;
+  margin: 0 auto;
+  padding-left: 4px;
+}
+
+.about_item_inf .about_diffusors p {
+  font-weight: 700;
+  font-size: 20px;
+  color: #474646;
+  margin-top: 60px;
+  text-align: center;
+}

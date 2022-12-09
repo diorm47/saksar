@@ -1,0 +1,64 @@
+.footer_title {
+  text-align: center;
+  margin-bottom: 80px;
+  margin-top: 100px;
+}
+.footer_title h3 {
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 156.8%;
+  color: #000000;
+}
+.footer_form {
+  width: 1547px;
+  margin: 0 auto;
+}
+.footer_form form {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.footer_form form input {
+  width: 297px;
+  height: 73px;
+  text-indent: 19px;
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+  outline: none;
+
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 156.8%;
+}
+
+.footer_form form div input {
+  color: #625f5f;
+  font-family: "Jura";
+}
+.footer_form form div {
+  display: flex;
+  flex-direction: column;
+}
+.footer_form form div span {
+  color: red;
+  margin-top: 5px;
+}
+
+.footer_form form .submit_btn {
+  text-indent: 0;
+  background: #000000;
+  cursor: pointer;
+  font-family: "Jura";
+  font-size: 26px;
+  line-height: 156.8%;
+  text-align: center;
+  color: #ffffff;
+  transition: all 0.4s ease;
+}
+
+.footer_form form .submit_btn:hover {
+  background: #000000c2;
+  transition: all 0.4s ease;
+}

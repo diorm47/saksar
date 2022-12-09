@@ -1,0 +1,32 @@
+.snackbar {
+  width: 400px;
+  height: 80px;
+  position: fixed;
+  bottom: 30px;
+  left: 40px;
+  z-index: 311;
+
+  background: #fcc9a9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+}
+.snackbar p {
+  color: #000000;
+
+  opacity: 0.6;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+@media only screen and (max-width: 460px) {
+  .snackbar {
+    width: 90%;
+    height: 40px;
+    left: 10px;
+  }
+  .snackbar p {
+    font-size: 14px;
+  }
+}

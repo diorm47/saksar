@@ -1,0 +1,76 @@
+.card_item {
+  width: 376px;
+  height: 560px;
+  background: #fff0e6;
+  text-align: center;
+  transition: all 0.6s ease;
+}
+.card_item:hover {
+  transition: all 0.6s ease;
+  box-shadow: 0px 2px 61px -13px #0000003a;
+}
+.card_item:hover .cart_product_name p {
+  transition: all 1s ease;
+  text-decoration: underline;
+}
+.cart_image {
+  width: 100%;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+.cart_image img {
+  width: 100%;
+  transition: all 1s ease;
+}
+.cart_image img:hover {
+  transition: all 1s ease;
+  transform: scale(1.05);
+}
+.cart_description p {
+  font-size: 18px;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: #000000;
+  opacity: 0.4;
+}
+
+.cart_product_name p {
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 28px;
+  text-transform: uppercase;
+  color: #000000;
+  margin: 10px 0;
+  transition: all 1s ease;
+  cursor: pointer;
+}
+.cart_product_price p {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: #000000;
+  opacity: 0.34;
+}
+
+.add_del_btn {
+  width: 43px;
+  height: 43px;
+  border-radius: 50%;
+  border: 0.811321px solid rgba(0, 0, 0, 0.34);
+  margin: 0 auto;
+  margin-top: 17px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.5s ease;
+}
+.add_del_btn:hover {
+  transition: all 0.5s ease;
+  border: 0.811321px solid #000000;
+}
+
+.added_to_cart {
+  border: 1px solid #000000;
+}
