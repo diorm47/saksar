@@ -141,6 +141,9 @@ nav {
   transition: all 0.5s ease;
   top: -1100px;
 }
+.nav_mobilie_menu .active {
+  opacity: 0.5;
+}
 
 @media only screen and (max-width: 1720px) {
   .nav_basket {
@@ -245,3 +248,5 @@ nav {
     right: 20%;
   }
 }
+
+

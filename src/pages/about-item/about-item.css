@@ -163,8 +163,8 @@
 @media only screen and (max-width: 1600px) {
   .about_item_wrapper {
     width: 100%;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 }
 
@@ -265,5 +265,12 @@
     margin-bottom: 10px;
     font-size: 30px;
     line-height: 25px;
+  }
+}
+
+@media only screen and (max-width: 416px) {
+  .about_item_wrapper .carousel_block {
+    display: none ;
+    visibility: hidden ;
   }
 }

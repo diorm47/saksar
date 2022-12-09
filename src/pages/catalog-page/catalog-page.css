@@ -40,7 +40,7 @@
   }
 }
 
-@media only screen and (max-width: 1620px) {
+@media only screen and (max-width: 1220px) {
   .catalog_items {
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 20px;
@@ -53,6 +53,9 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+  }
+  .catalog_items .card_item {
+    margin-bottom: 20px;
   }
   .catalog_page {
     padding-top: 100px;

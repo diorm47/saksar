@@ -1,41 +1,59 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
+import { Suspense } from "react";
 import NavBar from "./components/nav-bar/nav-bar";
-import AboutItem from "./pages/about-item/about-item";
-import CartPage from "./pages/cart-page/cart-page";
-import CatalogPage from "./pages/catalog-page/catalog-page";
-import ContactsPage from "./pages/contacts-page/contacts-page";
-import HomePage from "./pages/home-page/home-page";
-import PaymentDelivery from "./pages/payment-delivery-page/payment-delivery";
-import ButterPage from "./pages/products-pages/butter-page";
-import DiffusorsPage from "./pages/products-pages/diffusors-page";
-import ScrubsPage from "./pages/products-pages/scrubs-page";
-import SpaSetsPage from "./pages/products-pages/spa-sets-page";
+import Loader from "./components/Loader/loader";
+
+const ButterPage = React.lazy(() =>
+  import("./pages/products-pages/butter-page")
+);
+const DiffusorsPage = React.lazy(() =>
+  import("./pages/products-pages/diffusors-page")
+);
+const ScrubsPage = React.lazy(() =>
+  import("./pages/products-pages/scrubs-page")
+);
+const SpaSetsPage = React.lazy(() =>
+  import("./pages/products-pages/spa-sets-page")
+);
+
+const AboutItem = React.lazy(() => import("./pages/about-item/about-item"));
+const CartPage = React.lazy(() => import("./pages/cart-page/cart-page"));
+const CatalogPage = React.lazy(() =>
+  import("./pages/catalog-page/catalog-page")
+);
+const ContactsPage = React.lazy(() =>
+  import("./pages/contacts-page/contacts-page")
+);
+const HomePage = React.lazy(() => import("./pages/home-page/home-page"));
+const PaymentDelivery = React.lazy(() =>
+  import("./pages/payment-delivery-page/payment-delivery")
+);
 
 function App() {
   return (
     <>
       <NavBar />
       <div className="app_content">
-        <Routes>
-          <Route path="/" element={<HomePage />} />
-          <Route path="/catalog" element={<CatalogPage />} />
-          <Route path="/payment-delivery" element={<PaymentDelivery />} />
-          <Route path="/contacts" element={<ContactsPage />} />
-          <Route path="/butter" element={<ButterPage />} />
-          <Route path="/scrubs" element={<ScrubsPage />} />
-          <Route path="/spa-sets" element={<SpaSetsPage />} />
-          <Route path="/diffusers" element={<DiffusorsPage />} />
-          <Route path="/cart" element={<CartPage />} />
-          <Route path="/about-item/*" element={<AboutItem />} />
+        <Suspense fallback={<Loader />}>
+          <Routes>
+            <Route path="/" element={<HomePage />} />
+            <Route path="/catalog" element={<CatalogPage />} />
+            <Route path="/payment-delivery" element={<PaymentDelivery />} />
+            <Route path="/contacts" element={<ContactsPage />} />
+            <Route path="/butter" element={<ButterPage />} />
+            <Route path="/scrubs" element={<ScrubsPage />} />
+            <Route path="/spa-sets" element={<SpaSetsPage />} />
+            <Route path="/diffusers" element={<DiffusorsPage />} />
+            <Route path="/cart" element={<CartPage />} />
+            <Route path="/about-item/*" element={<AboutItem />} />
 
-          <Route path="*" element={"Page not found"} />
-        </Routes>
+            <Route path="*" element={"Page not found"} />
+          </Routes>
+        </Suspense>
       </div>
     </>
   );
 }
 
 export default App;
-
-

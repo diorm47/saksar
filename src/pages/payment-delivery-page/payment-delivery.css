@@ -141,3 +141,11 @@
     line-height: 25px;
   }
 }
+
+
+@media only screen and (max-width: 415px) {
+  .payment_delivery_title h1 {
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+}

@@ -50,6 +50,20 @@ function AboutItem() {
     setStop(false);
     play();
   };
+  if (document.readyState !== "loading") {
+    us_clickInterception();
+  } else {
+    document.addEventListener("DOMContentLoaded", us_clickInterception);
+  }
+
+  function us_clickInterception() {
+    var links = document.querySelectorAll("a");
+    Array.prototype.forEach.call(links, function (link) {
+      link.addEventListener("click", function () {
+        stop();
+      });
+    });
+  }
 
   return (
     <>
