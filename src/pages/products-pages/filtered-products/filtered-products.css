@@ -23,3 +23,34 @@
   margin-top: 30px;
   font-size: 19px;
 }
+
+@media only screen and (max-width: 1620px) {
+  .filtered_products {
+    width: 100%;
+    padding: 100px 30px 70px 30px;
+  }
+  .filtered_products_carts {
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 15px;
+  }
+}
+
+@media only screen and (max-width: 1250px) {
+  .filtered_products_carts {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 15px;
+  }
+}
+@media only screen and (max-width: 850px) {
+  .filtered_products_carts {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+  }
+  .filtered_product_title h1 {
+    margin-bottom: 40px;
+    font-size: 22px;
+    line-height: 35px;
+  }
+}

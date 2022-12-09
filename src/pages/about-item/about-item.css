@@ -159,3 +159,111 @@
   margin-top: 60px;
   text-align: center;
 }
+
+@media only screen and (max-width: 1600px) {
+  .about_item_wrapper {
+    width: 100%;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+@media only screen and (max-width: 1300px) {
+  .about_left_part {
+    margin-right: 20px;
+  }
+}
+
+@media only screen and (max-width: 1050px) {
+  .about_item_content {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .about_right_block {
+    width: 100%;
+  }
+  .about_left_part {
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+  .about_item_cost,
+  .about_add_to_cart {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .about_item_inf .about_diffusors p {
+    margin-top: 0;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .about_item_title h1 {
+    margin-top: 60px;
+    margin-bottom: 30px;
+    font-size: 25px;
+  }
+}
+
+@media only screen and (max-width: 630px) {
+  .about_item_img {
+    width: 100%;
+    height: auto;
+  }
+  .about_item_img img {
+    width: 100%;
+  }
+  .carousel_title h3 {
+    font-size: 23px;
+    line-height: 25px;
+    margin-bottom: 40px;
+  }
+  .carousel_block {
+    margin-top: 40px;
+  }
+  .about_item_content {
+    padding-bottom: 30px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .about_item_description p {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 100%;
+    margin: 20px 0 10px;
+  }
+  .about_item_description span {
+    font-size: 18px;
+  }
+
+  .about_item_cost p {
+    font-size: 30px;
+    line-height: 43px;
+    margin-top: 30px;
+  }
+  .about_add_to_cart button {
+    margin-top: 30px;
+    width: 197px;
+    height: 45px;
+    font-size: 18px;
+    line-height: 100%;
+  }
+  .about_item_inf .about_diffusors p {
+    font-size: 16px;
+  }
+
+  .about_item_type p {
+    margin-bottom: 10px;
+    font-size: 15px;
+    line-height: 14px;
+  }
+
+  .about_item_name h2 {
+    margin-bottom: 10px;
+    font-size: 30px;
+    line-height: 25px;
+  }
+}

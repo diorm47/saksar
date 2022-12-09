@@ -27,3 +27,34 @@
 .catalog_application {
   margin-top: 200px;
 }
+
+@media only screen and (max-width: 1620px) {
+  .catalog_wrapper {
+    width: 100%;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .catalog_items {
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+  }
+}
+
+@media only screen and (max-width: 1620px) {
+  .catalog_items {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+  }
+}
+
+@media only screen and (max-width: 840px) {
+  .catalog_items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .catalog_page {
+    padding-top: 100px;
+  }
+}

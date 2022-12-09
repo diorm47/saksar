@@ -49,6 +49,15 @@ function Carousel() {
     slidesToScroll: 3,
     responsive: [
       {
+        breakpoint: 1600,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 2,
+          infinite: true,
+          dots: false,
+        },
+      },
+      {
         breakpoint: 1350,
         settings: {
           slidesToShow: 3,

@@ -86,3 +86,58 @@
   text-transform: uppercase;
   color: #000000;
 }
+
+@media only screen and (max-width: 1200px) {
+  .payment_delivery_wrapper {
+    width: 100%;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .payment_delivery {
+    padding-top: 60px;
+  }
+  .payment_delivery_title h1 {
+    margin-bottom: 40px;
+    font-size: 38px;
+    line-height: 69px;
+  }
+
+  .payment_section_title h2 {
+    font-size: 28px;
+    line-height: 27px;
+    margin-bottom: 70px;
+  }
+  .paymetn_descriptions h3 {
+    margin-bottom: 30px;
+    font-size: 22px;
+    line-height: 35px;
+  }
+  .paymetn_descriptions p {
+    margin-bottom: 30px;
+    font-size: 19px;
+    line-height: 23px;
+  }
+
+  .delivery_section_title h2 {
+    margin-top: 50px;
+    font-size: 28px;
+    line-height: 37px;
+  }
+  .delivery_descriptions h3 {
+    margin: 35px 0 25px 0;
+    font-size: 22px;
+    line-height: 35px;
+  }
+  .delivery_descriptions p {
+    font-size: 19px;
+    line-height: 23px;
+  }
+  .company_information p {
+    margin-top: 80px;
+    font-size: 17px;
+    line-height: 25px;
+  }
+}
