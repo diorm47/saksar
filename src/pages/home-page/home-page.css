@@ -61,7 +61,16 @@
   display: flex;
   position: relative;
 }
-
+.founder_img {
+  width: 40%;
+  margin-right: 50px;
+}
+.founder_img img {
+  width: 100%;
+}
+.history_brand_text {
+  width: 50%;
+}
 .history_brand_text h1 {
   margin-bottom: 22px;
   font-weight: 600;
@@ -72,7 +81,7 @@
 
 .history_brand_text p {
   font-weight: 500;
-  font-size: 25px;
+  font-size: 24px;
   line-height: 150%;
   color: #000000;
   margin-bottom: 35px;
@@ -214,8 +223,16 @@
     text-align: center;
     margin: 20px;
   }
+  .founder_img {
+    width: 100%;
+    margin: 0;
+  }
+  .history_brand {
+    padding-top: 0;
+  }
   .history_brand_text {
     padding: 0 30px;
+    width: 100%;
   }
   .history_brand_wrapper {
     padding-right: 0px;

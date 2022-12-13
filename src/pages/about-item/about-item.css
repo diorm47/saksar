@@ -17,6 +17,7 @@
   display: flex;
   justify-content: space-between;
   padding-bottom: 120px;
+  padding: 0 30px;
 }
 
 .about_item_img {
@@ -37,8 +38,8 @@
 .about_item_type p {
   margin-bottom: 18px;
   font-weight: 700;
-  font-size: 20px;
-  line-height: 24px;
+  font-size: 16px;
+  line-height: 20px;
   text-transform: uppercase;
   color: #000000;
   opacity: 0.5;
@@ -47,8 +48,8 @@
 .about_item_name h2 {
   margin-bottom: 18px;
   font-weight: 700;
-  font-size: 60px;
-  line-height: 83px;
+  font-size: 50px;
+  line-height: 40px;
   text-transform: uppercase;
   color: #000000;
 }
@@ -58,15 +59,19 @@
 
 .about_item_description p {
   font-weight: 500;
-  font-size: 22px;
+  font-size: 19px;
   line-height: 130%;
   color: #464444;
   margin: 20px 0 10px;
 }
 .about_item_description span {
   font-weight: 600;
-  font-size: 25px;
+  font-size: 22px;
   color: black;
+}
+
+.compound_items p {
+   margin: 0 0;
 }
 
 .diffuzor_notes div p {
@@ -74,8 +79,8 @@
 }
 .about_item_cost p {
   font-weight: 700;
-  font-size: 70px;
-  line-height: 83px;
+  font-size: 45px;
+  line-height: 30px;
   text-transform: uppercase;
   color: #000000;
   margin-top: 60px;
@@ -163,8 +168,8 @@
 @media only screen and (max-width: 1600px) {
   .about_item_wrapper {
     width: 100%;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
   }
 }
 
@@ -270,7 +275,7 @@
 
 @media only screen and (max-width: 416px) {
   .about_item_wrapper .carousel_block {
-    display: none ;
-    visibility: hidden ;
+    display: none;
+    visibility: hidden;
   }
 }

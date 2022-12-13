@@ -3,6 +3,7 @@ import { Route, Routes } from "react-router-dom";
 import { Suspense } from "react";
 import NavBar from "./components/nav-bar/nav-bar";
 import Loader from "./components/Loader/loader";
+import CheckoutPage from "./pages/checkout-page/checkout-page";
 
 const ButterPage = React.lazy(() =>
   import("./pages/products-pages/butter-page")
@@ -47,6 +48,7 @@ function App() {
             <Route path="/diffusers" element={<DiffusorsPage />} />
             <Route path="/cart" element={<CartPage />} />
             <Route path="/about-item/*" element={<AboutItem />} />
+            <Route path="/checkout" element={<CheckoutPage />} />
 
             <Route path="*" element={"Page not found"} />
           </Routes>

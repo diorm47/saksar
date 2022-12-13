@@ -102,7 +102,14 @@ function Carousel() {
               <p>{item.name}</p>
             </div>
             <div className="cart_product_price">
-              <p>{item.price} Р</p>
+              {item.type !== "Аромадиффузор" ? (
+                <p>{item.price} ₽</p>
+              ) : (
+                <>
+                  <p>{item.price} ₽ за 50мл</p>
+                  <p>{item.second_price} ₽ за 100мл</p>
+                </>
+              )}
             </div>
             <div
               className={

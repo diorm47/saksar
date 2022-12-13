@@ -128,12 +128,36 @@ function AboutItem() {
                   </p>
                 </div>
               )}
+              {!item.compound_items || (
+                <div className="compound_items">
+                  <span>Состав: </span> <br />
+                  {item.compound_items.map((item) => (
+                    <p key={item}>{item}</p>
+                  ))}
+                </div>
+              )}
+              {!item.properties || (
+                <div className="properties">
+                  <p>
+                    <span>Свойства: </span> <br />
+                    {item.properties}
+                  </p>
+                </div>
+              )}
               {!item.mode_of_application || (
                 <div className="mode_of_application">
                   <p>
                     <span>Способ применения: </span>
                     <br />
                     {item.mode_of_application}
+                  </p>
+                </div>
+              )}
+              {!item.effect || (
+                <div className="effect">
+                  <p>
+                    <span>Эффект от применения : </span> <br />
+                    {item.effect}
                   </p>
                 </div>
               )}
@@ -148,7 +172,14 @@ function AboutItem() {
               )}
             </div>
             <div className="about_item_cost">
-              <p>{item.price} Р</p>
+              {item.type !== "Аромадиффузор" ? (
+                <p>{item.price} ₽</p>
+              ) : (
+                <>
+                  <p>{item.price} ₽ за 50мл</p>
+                  <p>{item.second_price} ₽ за 100мл</p>
+                </>
+              )}
             </div>
             <div className="about_add_to_cart">
               <button onClick={() => addToCartt(item)}>

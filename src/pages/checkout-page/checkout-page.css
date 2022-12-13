@@ -1,0 +1,12 @@
+.checkout_wrapper {
+  width: 100%;
+  padding: 60px 30px 40px;
+}
+
+.checkout_title h1 {
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 156.8%;
+  color: #000000;
+  margin-bottom: 30px;
+}

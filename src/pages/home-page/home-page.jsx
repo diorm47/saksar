@@ -2,7 +2,7 @@ import React from "react";
 import "./home-page.css";
 import header_left_img from "../../assets/images/header-left-img.png";
 import header_right_img from "../../assets/images/header-right-img.png";
-import founder_img from "../../assets/images/founder-img.png";
+import founder_img from "../../assets/images/founder-img.jpg";
 import authograph from "../../assets/images/authograph.png";
 import HomeProducts from "../../components/home_products_links/home-products";
 import ApplicationForm from "../../components/application-from/application_form";
@@ -34,27 +34,29 @@ function HomePage() {
             <img src={founder_img} alt="founder_img" />
           </div>
           <div className="history_brand_text">
-            <h1>ИСТОРИЯ БРЕНДА</h1>
+            <i>
+              <h1>ИСТОРИЯ БРЕНДА</h1>
+            </i>
 
-            <p>
-              Здравствуй! <br /> Я, Венера Какорина, основатель бренда SAKSAR
-              AROMA HOME COLLECTION.
-            </p>
-
-            <p>
-              Мой путь был тернист и долог, изучая множество рецептов, свойств
-              масел, смешивая различные экологичные аромамасла, я вывела
-              собственные формулы и создала потрясающую коллекцию ухода за телом
-              и ароматизаторов для дома.
-            </p>
-
-            <p>
-              В своих продуктах я использую только натуральные ингредиенты,
-              которые будут заботиться о твоем теле и домашнем пространстве.
-              Каждая баночка делается мной вручную с большой любовью к людям,
-              природе и своему ремеслу. Не сомневайся, что найдёшь здесь по
-              истине экологичный продукт.
-            </p>
+            <i>
+              <p>
+                Здравствуй! <br /> Я, Венера Какорина, основатель бренда SAKSAR
+                AROMA HOME COLLECTION.
+              </p>
+              <p>
+                Мой путь был тернист и долог, изучая множество рецептов, свойств
+                масел, смешивая различные экологичные аромамасла, я вывела
+                собственные формулы и создала потрясающую коллекцию ухода за
+                телом и ароматизаторов для дома.
+              </p>
+              <p>
+                В своих продуктах я использую только натуральные ингредиенты,
+                которые будут заботиться о твоем теле и домашнем пространстве.
+                Каждая баночка делается мной вручную с большой любовью к людям,
+                природе и своему ремеслу. Не сомневайся, что найдёшь здесь по
+                истине экологичный продукт.
+              </p>
+            </i>
             <div className="founder_authograph">
               <img src={authograph} alt="authograph" />
             </div>

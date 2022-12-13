@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { deleteFromCart } from "../../redux/cart-reducer";
 import "./cart-page.css";
@@ -6,6 +7,7 @@ import Footer from "../../components/footer/footer";
 import Snackbar from "../../components/snackbar/snackbar";
 
 function CartPage() {
+  const navigate = useNavigate();
   React.useEffect(() => {
     document.title = `Корзина товаров`;
   }, []);
@@ -22,6 +24,10 @@ function CartPage() {
     setTimeout(() => {
       setSnackbar(false);
     }, 1200);
+  };
+
+  const checkoutRedirect = () => {
+    navigate(`/checkout`);
   };
 
   return (
@@ -60,7 +66,7 @@ function CartPage() {
                     <div className="other_incart_items">
                       <p>
                         <span>Состав: </span>
-                        {item.compound}
+                        {item.compound || item.compound_items}
                       </p>
                     </div>
                   )}
@@ -93,7 +99,7 @@ function CartPage() {
               <p>Итого: </p>
               <p>{calcTotalPrice(incart)} Р</p>
             </div>
-            <div className="checkout_btn">
+            <div className="checkout_btn" onClick={checkoutRedirect}>
               <button>Оформить заказ</button>
             </div>
           </div>
