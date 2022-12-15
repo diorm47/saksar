@@ -47,14 +47,18 @@ function Card({ item }) {
             <p>{item.name}</p>
           </div>
           <div className="cart_product_price">
-            {item.type !== "Аромадиффузор" ? <p>{item.price} ₽</p> : <>
-            <p>{item.price} ₽ за 50мл</p> 
-            <p>{item.second_price} ₽ за 100мл</p> 
-            </>}
+            {item.type !== "Аромадиффузор" ? (
+              <p>{item.price} ₽</p>
+            ) : (
+              <>
+                <p>{item.price} ₽ за 50мл</p>
+                <p>{item.second_price} ₽ за 100мл</p>
+              </>
+            )}
           </div>
           <div
             className={
-              inCart.some((data) => data.id === item.id)
+              inCart.some((data) => data.id === item.id) || false
                 ? "add_del_btn added_to_cart"
                 : "add_del_btn"
             }

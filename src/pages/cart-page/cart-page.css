@@ -60,6 +60,13 @@
   line-height: 156.8%;
   color: #000000;
   margin-bottom: 10px;
+  cursor: pointer;
+  transition: all 1s ease;
+}
+
+.in_cart_description h4:hover {
+  transition: all 1s ease;
+  text-decoration: underline;
 }
 
 .diffusor_incart_descr p {
@@ -101,14 +108,15 @@
 }
 .in_cart_item_cost p {
   font-weight: 600;
-  font-size: 38.8468px;
-  line-height: 156.8%;
+  font-size: 30px;
+  line-height: 100%;
   text-align: center;
   color: #000000;
-  margin-bottom: 60px;
+  margin-bottom: 10px;
 }
 
 .del_item_from_cart button {
+  margin-top: 40px;
   width: 130px;
   height: 50px;
   font-family: "Jura";
@@ -223,5 +231,21 @@
   }
   .cart_page_title h1 {
     margin-bottom: 10px;
+  }
+  .in_cart_item_cost p {
+    font-size: 17px;
+  }
+  .in_cart_item_cost_del {
+    align-items: center;
+    margin-top: 20px;
+    justify-content: space-between;
+    padding: 0;
+  }
+  .del_item_from_cart button {
+    margin: 0;
+  }
+  .cart_page {
+    padding-left: 15px;
+    padding-right: 15px;
   }
 }

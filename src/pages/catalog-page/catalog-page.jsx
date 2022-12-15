@@ -1,15 +1,15 @@
 import React from "react";
-import { useSelector } from "react-redux";
-import Card from "../../components/card/card";
-import "./catalog-page.css";
+import { items } from "../../redux/data";
 import ApplicationForm from "../../components/application-from/application_form";
+import Card from "../../components/card/card";
 import Footer from "../../components/footer/footer";
+import "./catalog-page.css";
 
 function CatalogPage() {
   React.useEffect(() => {
     document.title = `Каталог товаров`;
   }, []);
-  const items = useSelector((state) => state.cart.items);
+  
   return (
     <>
       <div className="catalog_page">

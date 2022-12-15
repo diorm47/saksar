@@ -1,12 +1,11 @@
-import { items } from "./data";
-
 const ADD_TO_CART = "ADD_TO_CART";
 const DELETE_FROM_CART = "DELETE_FROM_CART";
 const SET_CURRENT_ITEM = "SET_CURRENT_ITEM";
 const CHECKOUT = "CHECKOUT";
+const INCREMENT = "INCREMENT";
+const DECREMENT = "DECREMENT";
 
 let initialState = {
-  items: items,
   cart: [],
   currentItem: [],
 };
@@ -34,6 +33,14 @@ const cartReducer = (state = initialState, action) => {
         ...state,
         cart: [...state.cart, action.payload],
       };
+    case INCREMENT:
+      state.cart.map((item) => {
+        if (item.id === action.payload) {
+          return { ...item, count: item.count++ };
+        }
+
+        return item;
+      });
 
     default:
       return state;
@@ -55,6 +62,20 @@ export const deleteFromCart = (payload) => {
 export const setCurrentItem = (payload) => {
   return {
     type: SET_CURRENT_ITEM,
+    payload,
+  };
+};
+
+export const incrementItem = (payload) => {
+  return {
+    type: INCREMENT,
+    payload,
+  };
+};
+
+export const decrementItem = (payload) => {
+  return {
+    type: DECREMENT,
     payload,
   };
 };

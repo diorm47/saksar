@@ -61,10 +61,12 @@ function NavBar() {
             <img src={burger_menu} alt="burger_menu" />
           </div>
           <div className="nav_basket">
-            {!inCart.length || (
+            {inCart.length > 0 ? (
               <div className="selected_length">
                 <p>{inCart.length}</p>
               </div>
+            ) : (
+              ""
             )}
             <NavLink to="/cart">
               <BasketIcon />

@@ -6,6 +6,7 @@ export const items = [
     music: "/musics/111.mp3",
     price: 1990,
     second_price: 2990,
+    count: 1,
     cart_img: "/product_images/cart-images/111.png",
     about_img: "/product_images/about-images/111.jpg",
     top_notes: "черная смородина, яблоко, бергамот, амаретто, лимон",
@@ -25,6 +26,7 @@ export const items = [
     about_img: "/product_images/about-images/222.jpg",
     price: 2990,
     second_price: 4990,
+    count: 1,
     top_notes: "лимон, агава, алоэ, имбирь, яблоко",
     middle_notes:
       "имбирь, хризантема, зеленые цветы, зеленые листья; жасмин, жимолость, сосна",
@@ -42,6 +44,7 @@ export const items = [
     about_img: "/product_images/about-images/333.jpg",
     price: 2990,
     second_price: 4990,
+    count: 1,
     top_notes: "озон, лён, зеленые цветы, зеленые листья, фрезия",
     middle_notes:
       "эвкалипт, морская соль, фрезия, инжир, жасмин, герань, зеленые листья, цветение вишни",
@@ -59,6 +62,7 @@ export const items = [
     about_img: "/product_images/about-images/444.jpg",
     price: 2990,
     second_price: 4990,
+    count: 1,
     top_notes: "яблоко, петитгрейн, бергамот",
     middle_notes: "сосна, жасмин, нероли, апельсиновый цветок",
     bottom_notes: "кедр, пихта, кипарис, сандаловое дерево",
@@ -74,6 +78,7 @@ export const items = [
     about_img: "/product_images/about-images/555.jpg",
     price: 2990,
     second_price: 4990,
+    count: 1,
     top_notes: "яблоко, петитгрейн, бергамот, черная смородина",
     middle_notes:
       "сосна, жасмин, нероли, апельсиновый цветок, кориандр, мед, амбра, вишня, красное вино",
@@ -91,6 +96,7 @@ export const items = [
     about_img: "/product_images/about-images/666.jpg",
     price: 2990,
     second_price: 4990,
+    count: 1,
     top_notes: "бергамот, цедра лимона, фрезия, озон",
     middle_notes: "кедр, инжир, герань, зеленые листья, жасмин, цветение вишни",
     bottom_notes:
@@ -107,6 +113,7 @@ export const items = [
     about_img: "/product_images/about-images/777.jpg",
     price: 2990,
     second_price: 4990,
+    count: 1,
     top_notes: "агава, алоэ, зеленые цветы, зеленые листья, озон",
     middle_notes: "хризантема, зеленые цветы, зеленые листья, инжир, жасмин",
     bottom_notes: "пачули, легкий мускус, дерево, мох",
@@ -122,6 +129,7 @@ export const items = [
     about_img: "/product_images/about-images/888.jpg",
     price: 2990,
     second_price: 4990,
+    count: 1,
     top_notes: "лимон, имбирь,  амаретто",
     middle_notes: "жасмин, жимолость, бобы тонка, бальзам, имбирь",
     bottom_notes:
@@ -138,6 +146,7 @@ export const items = [
     about_img: "/product_images/about-images/333.jpg",
     price: 2990,
     second_price: 4990,
+    count: 1,
     top_notes:
       "лимон, имбирь, агава, алоэ, фрезия, озон, бергамот, цедра лимона, зеленые цветы, лён",
     middle_notes:
@@ -154,6 +163,7 @@ export const items = [
     cart_img: "/product_images/cart-images/Баттер.png",
     about_img: "/product_images/about-images/Баттер.jpg",
     price: 1490,
+    count: 1,
     compound:
       "Масло Ши, Масло кокоса, масло какао, комплекс витаминов А+E+D3, эфирное масло герани, твин 80. ",
     properties:
@@ -169,6 +179,7 @@ export const items = [
     cart_img: "/product_images/cart-images/Кофемагия.png",
     about_img: "/product_images/about-images/Кофемагия.jpg",
     price: 1490,
+    count: 1,
     compound:
       "Масло какао, оливковое масло, масло кокоса, масло абрикосовой косточки, экстракт красного перца, тростниковый сахар, молотый кофе, твин 80. ",
     properties:
@@ -184,6 +195,7 @@ export const items = [
     cart_img: "/product_images/cart-images/Ментоловое очищение.png",
     about_img: "/product_images/about-images/Ментоловое очищение.jpg",
     price: 1490,
+    count: 1,
     compound:
       "Масло авокадо, масло кокоса, масло макадами, ментол, морская соль, сахар, твин 80. ",
     properties:
@@ -199,6 +211,7 @@ export const items = [
     cart_img: "/product_images/cart-images/Малиновое наслаждение.png",
     about_img: "/product_images/about-images/Малиновое наслаждение.jpg",
     price: 1490,
+    count: 1,
     compound:
       "Масло сладкого миндаля, масло виноградной косточки, сахар, косточки малины, натуральный ароматизатор, твин 80. ",
     properties:
@@ -214,6 +227,7 @@ export const items = [
     cart_img: "/product_images/cart-images/Кофемагия.png",
     about_img: "/product_images/about-images/Кофемагия.jpg",
     price: 2990,
+    count: 1,
     compound_items: [
       "- Баттер",
       '- Скраб для тела "Кофемагия',
@@ -233,6 +247,7 @@ export const items = [
     cart_img: "/product_images/cart-images/spa-Ментоловое очищение.png",
     about_img: "/product_images/about-images/spa-Ментоловое очищение.jpg",
     price: 2990,
+    count: 1,
     compound_items: [
       "- Баттер",
       '- Скраб для тела "Ментоловое очищение"',
@@ -252,6 +267,7 @@ export const items = [
     cart_img: "/product_images/cart-images/spa-Малиновое наслаждение.png",
     about_img: "/product_images/about-images/spa-Малиновое наслаждени.jpg",
     price: 2990,
+    count: 1,
     compound_items: [
       "- Баттер",
       ' - Скраб для тела " Малиновое наслаждение"',
@@ -271,6 +287,7 @@ export const items = [
     cart_img: "/product_images/cart-images/spa-Ассорти скрабов.png",
     about_img: "/product_images/about-images/spa-Ассорти скрабов.jpg",
     price: 2990,
+    count: 1,
     properties:
       "Скраб – отвечает за очищение кожи от поверхностных слоев отмерших клеток кожи, ускоряет вывод застоявшейся жидкости и обеспечивает проницаемость эпидермиса для активных компонентов косметических средств. Я собрала для тебя в набор три вида скраба, чтобы у тебя под рукой всегда был выбор! Для твоего удобства в наборе ты найдешь массажную мочалку и шпатели для набора скраба. ",
     compound_items: [

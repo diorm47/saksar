@@ -1,7 +1,11 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
-import { deleteFromCart } from "../../redux/cart-reducer";
+import {
+  decrementItem,
+  deleteFromCart,
+  incrementItem,
+} from "../../redux/cart-reducer";
 import "./cart-page.css";
 import Footer from "../../components/footer/footer";
 import Snackbar from "../../components/snackbar/snackbar";
@@ -30,6 +34,24 @@ function CartPage() {
     navigate(`/checkout`);
   };
 
+  const aboutItem = (item) => {
+    if (!localStorage.getItem("currentItem")) {
+      localStorage.setItem("currentItem", JSON.stringify(item));
+    } else localStorage.setItem("currentItem", JSON.stringify(item));
+
+    navigate(`/about-item/${item.name}`);
+  };
+
+  const increment = (item) => {
+    dispatch(incrementItem(item.id));
+    console.log(item);
+  };
+
+  const decrement = (item) => {
+    dispatch(decrementItem(item.id));
+  };
+  console.log();
+
   return (
     <>
       <div className="cart_page">
@@ -48,7 +70,7 @@ function CartPage() {
                 </div>
                 <div className="in_cart_description">
                   <p>{item.type}</p>
-                  <h4>{item.name}</h4>
+                  <h4 onClick={() => aboutItem(item)}>{item.name}</h4>
                   {item.type === "Аромадиффузор" ? (
                     <div className="diffusor_incart_descr">
                       <p>
@@ -69,16 +91,23 @@ function CartPage() {
                         {item.compound || item.compound_items}
                       </p>
                     </div>
-                  )}
+                  )} 
                 </div>
                 <div className="in_item_calculator">
-                  <p>-</p>
-                  <p>1</p>
-                  <p>+</p>
+                  <p onClick={() => decrement(item)}>-</p>
+                  <p>{item.count}</p>
+                  <p onClick={() => increment(item)}>+</p>
                 </div>
                 <div className="in_cart_item_cost_del">
                   <div className="in_cart_item_cost">
-                    <p>{item.price} Р</p>
+                    {item.type !== "Аромадиффузор" ? (
+                      <p>{item.price} ₽</p>
+                    ) : (
+                      <>
+                        <p>{item.price} ₽ за 50мл</p>
+                        <p>{item.second_price} ₽ за 100мл</p>
+                      </>
+                    )}
                   </div>
                   <div
                     className="del_item_from_cart"
