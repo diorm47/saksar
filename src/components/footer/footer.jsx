@@ -70,7 +70,7 @@ function Footer() {
             <span>|</span>
           </div>
           <a
-            href="https://instagram.com/saksar"
+            href="https://instagram.com/saksar_homecollection?igshid=YmMyMTA2M2Y="
             target="_blank"
             rel="noreferrer"
           >

@@ -73,11 +73,16 @@
   text-transform: uppercase;
   color: #000000;
 }
-.delivery_descriptions p span {
+.delivery_descriptions p a {
   text-decoration: underline #0000003d;
+  color: #000000;
   cursor: pointer;
+  transition: all 0.5s ease;
 }
-
+.delivery_descriptions p a:hover {
+  transition: all 0.5s ease;
+  color: #00000071;
+}
 .company_information p {
   margin-top: 100px;
   font-weight: 400;
@@ -141,7 +146,6 @@
     line-height: 25px;
   }
 }
-
 
 @media only screen and (max-width: 415px) {
   .payment_delivery_title h1 {

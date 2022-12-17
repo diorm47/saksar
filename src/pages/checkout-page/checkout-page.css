@@ -26,3 +26,80 @@
 .ch_total_price {
   margin: 10px 0;
 }
+
+.checkout_page {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.checkout_form form input,
+textarea {
+  color: #625f5f;
+  font-family: "Jura";
+}
+
+.checkout_form form input {
+  width: 300px;
+  height: 60px;
+  text-indent: 14px;
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+  outline: none;
+
+  font-weight: 500;
+  font-size: 18px;
+  margin-bottom: 18px;
+}
+.checkout_form form .product_name_input textarea,
+.adress_input textarea {
+  width: 300px;
+  height: 100px;
+
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+  outline: none;
+
+  font-weight: 500;
+  font-size: 18px;
+  margin-bottom: 18px;
+  padding: 10px;
+}
+.checkout_form form .submit_btn {
+  text-indent: 0;
+  background: #000000;
+  cursor: pointer;
+  font-family: "Jura";
+  font-size: 20px;
+  text-align: center;
+  color: #ffffff;
+  transition: all 0.4s ease;
+}
+.checkout_form form .submit_btn:hover {
+  background: #000000c2;
+  transition: all 0.4s ease;
+}
+
+@media only screen and (max-width: 880px) {
+  .checkout_page {
+    flex-direction: column;
+    align-items: center;
+  }
+  .chechout_items {
+    margin-bottom: 40px;
+  }
+}
+
+@media only screen and (max-width: 540px) {
+  .checkout_item {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .checkout_title h1 {
+    text-align: center;
+  }
+}
