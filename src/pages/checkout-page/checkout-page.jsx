@@ -5,6 +5,9 @@ import { useSelector } from "react-redux";
 
 const CheckoutPage = () => {
   const incart = useSelector((state) => state.cart.cart);
+  React.useEffect(() => {
+    document.title = `Оформление заказа`;
+  }, []);
   return (
     <>
       <div className="checkout_wrapper">
@@ -19,8 +22,21 @@ const CheckoutPage = () => {
                 <h3 className="ch_item_name">
                   {item.type} - {item.name}
                 </h3>
-                <p className="ch_count">Количество - {item.count} штук</p>
-                <h4 className="ch_total_price">Цена за этот товар - {item.count * item.price} ₽</h4>
+                {item.type === "Аромадиффузор" && item.count === 2 ? (
+                  <p className="ch_count">Количество - 1 штук 100 грамм</p>
+                ) : (
+                  <p className="ch_count">Количество - {item.count} штук</p>
+                )}
+
+                {item.type === "Аромадиффузор" && item.count === 2 ? (
+                  <h4 className="ch_total_price">
+                    Цена за этот товар - {item.count * item.price - 990} ₽
+                  </h4>
+                ) : (
+                  <h4 className="ch_total_price">
+                    Цена за этот товар - {item.count * item.price} ₽
+                  </h4>
+                )}
               </div>
             </div>
           ))}

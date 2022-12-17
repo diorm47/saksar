@@ -19,9 +19,6 @@ function CartPage() {
   const [snackbar, setSnackbar] = useState(false);
   const dispatch = useDispatch();
 
-  const calcTotalPrice = (items) =>
-    items.reduce((acc, item) => (acc += item.price), 0);
-
   const deleteItemFromCart = (data) => {
     dispatch(deleteFromCart(data.id));
     setSnackbar(true);
@@ -44,13 +41,11 @@ function CartPage() {
 
   const increment = (item) => {
     dispatch(incrementItem(item.id));
-    console.log(item);
   };
 
   const decrement = (item) => {
     dispatch(decrementItem(item.id));
   };
-  console.log();
 
   return (
     <>
@@ -91,7 +86,7 @@ function CartPage() {
                         {item.compound || item.compound_items}
                       </p>
                     </div>
-                  )} 
+                  )}
                 </div>
                 <div className="in_item_calculator">
                   <p onClick={() => decrement(item)}>-</p>
@@ -126,7 +121,14 @@ function CartPage() {
           <div className="checkout_cart">
             <div className="total_summ">
               <p>Итого: </p>
-              <p>{calcTotalPrice(incart)} Р</p>
+              <p>
+                {incart.reduce(
+                  (accumulator, current) =>
+                    accumulator + current.price * current.count,
+                  0
+                )}
+                ₽
+              </p>
             </div>
             <div className="checkout_btn" onClick={checkoutRedirect}>
               <button>Оформить заказ</button>

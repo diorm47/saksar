@@ -34,13 +34,25 @@ const cartReducer = (state = initialState, action) => {
         cart: [...state.cart, action.payload],
       };
     case INCREMENT:
-      state.cart.map((item) => {
-        if (item.id === action.payload) {
-          return { ...item, count: item.count++ };
-        }
-
-        return item;
-      });
+      return {
+        ...state,
+        cart: state.cart.map((item) => {
+          if (item.id === action.payload) {
+            item.count += 1;
+          }
+          return item;
+        }),
+      };
+      case DECREMENT:
+        return {
+          ...state,
+          cart: state.cart.map((item) => {
+            if (item.id === action.payload) {
+              item.count -= 1;
+            }
+            return item;
+          }),
+        };
 
     default:
       return state;
