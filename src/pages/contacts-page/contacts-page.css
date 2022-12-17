@@ -97,7 +97,6 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed;
   padding: 125px 0 135px 230px;
 }
 
@@ -238,14 +237,11 @@ a {
     margin-bottom: 30px;
     font-size: 23px;
     line-height: 25px;
-
   }
   .contacts_block p,
   a {
-
     font-size: 16px;
     line-height: 120%;
-
   }
   .contacts_icons img {
     width: 20px;
@@ -265,5 +261,11 @@ a {
     margin-bottom: 20px;
     font-size: 15px;
     line-height: 18px;
+  }
 }
+
+@media only screen and (max-width: 400px) {
+  .contacts_block p {
+    font-size: 14px;
+  }
 }

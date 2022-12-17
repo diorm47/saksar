@@ -47,14 +47,7 @@ function Card({ item }) {
             <p>{item.name}</p>
           </div>
           <div className="cart_product_price">
-            {item.type !== "Аромадиффузор" ? (
-              <p>{item.price} ₽</p>
-            ) : (
-              <>
-                <p>{item.price} ₽ за 50мл</p>
-                <p>{item.second_price} ₽ за 100мл</p>
-              </>
-            )}
+            <p>{item.price} ₽</p>
           </div>
           <div
             className={

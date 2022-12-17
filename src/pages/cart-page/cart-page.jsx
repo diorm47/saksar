@@ -95,14 +95,7 @@ function CartPage() {
                 </div>
                 <div className="in_cart_item_cost_del">
                   <div className="in_cart_item_cost">
-                    {item.type !== "Аромадиффузор" ? (
-                      <p>{item.price} ₽</p>
-                    ) : (
-                      <>
-                        <p>{item.price} ₽ за 50мл</p>
-                        <p>{item.second_price} ₽ за 100мл</p>
-                      </>
-                    )}
+                    <p>{item.price} ₽</p>
                   </div>
                   <div
                     className="del_item_from_cart"

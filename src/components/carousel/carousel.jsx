@@ -13,7 +13,7 @@ import plusIcon from "../../assets/icons/add_to_cart_icon.png";
 import { useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import { addToCart } from "../../redux/cart-reducer";
-import {items} from "../../redux/data"
+import { items } from "../../redux/data";
 import Snackbar from "../snackbar/snackbar";
 
 function Carousel() {
@@ -102,14 +102,7 @@ function Carousel() {
               <p>{item.name}</p>
             </div>
             <div className="cart_product_price">
-              {item.type !== "Аромадиффузор" ? (
-                <p>{item.price} ₽</p>
-              ) : (
-                <>
-                  <p>{item.price} ₽ за 50мл</p>
-                  <p>{item.second_price} ₽ за 100мл</p>
-                </>
-              )}
+              <p>{item.price} ₽</p>
             </div>
             <div
               className={

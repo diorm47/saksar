@@ -61,6 +61,9 @@ function ContactsPage() {
             <div className="contacts_phone_input">
               <input placeholder="телефон" name="phone_number" required />
             </div>
+            <div className="contacts_comment_input">
+              <input placeholder="комментарии" name="comments" required />
+            </div>
 
             <div className="contacts_submit_btn">
               <input
@@ -84,7 +87,7 @@ function ContactsPage() {
             <h1>Контакты</h1>
           </div>
           <p>
-            <a href="tel:+79099772280">+7 968 688-25-85 </a> <br />
+            <a href="tel:+79099772280">+7 909 977 22 80 </a> <br />
             <a
               className="contact_item"
               href="mailto:saksar_aroma@mail.ru"
@@ -94,7 +97,7 @@ function ContactsPage() {
               saksar_aroma@mail.ru
             </a>
             <br />
-            Россия, Москва, Ленинградский проспект д.43 <br /> стр.3, подъезд №3
+            Россия, Москва, Ленинградский проспект д.47 <br /> стр.3, подъезд №3
             БЦ «Авион» (метро Аэропорт)
           </p>
           <div className="contacts_icons">

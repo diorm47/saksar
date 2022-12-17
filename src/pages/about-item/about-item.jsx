@@ -174,14 +174,7 @@ function AboutItem() {
               )}
             </div>
             <div className="about_item_cost">
-              {item.type !== "Аромадиффузор" ? (
-                <p>{item.price} ₽</p>
-              ) : (
-                <>
-                  <p>{item.price} ₽ за 50мл</p>
-                  <p>{item.second_price} ₽ за 100мл</p>
-                </>
-              )}
+              <p>{item.price} ₽</p>
             </div>
             <div className="about_add_to_cart">
               <button onClick={() => addToCartt(item)}>
