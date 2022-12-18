@@ -11,6 +11,7 @@ function Footer() {
           <NavLink to="/">
             <div className="footer_logo">
               <h1>saksar</h1>
+              <p>aroma home collection</p>
             </div>
           </NavLink>
           <div className="footer_nav_list">

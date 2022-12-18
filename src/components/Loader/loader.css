@@ -9,23 +9,36 @@
   right: 0;
   bottom: 0;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   z-index: 444;
   background: #ffd1b2;
+  overflow: hidden;
+  color: #fff;
+  animation-name: loader_text;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
 }
 
 .loader_wrapper h1 {
   font-family: "Cormorant Garamond";
- font-weight: 500;
+  font-weight: 500;
   color: #fff;
   text-align: center;
   font-size: 120px;
   letter-spacing: 3px;
-
-  animation-name: loader_text;
-  animation-duration: 1s;
-  animation-iteration-count: infinite;
+  line-height: 100%;
+}
+.loader_wrapper p {
+  color: #fff;
+  font-family: "Cormorant Garamond";
+  font-weight: 600;
+  font-size: 25px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: #000000d1;
+  align-items: center;
 }
 
 @keyframes loader_text {

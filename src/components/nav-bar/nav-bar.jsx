@@ -31,6 +31,7 @@ function NavBar() {
           <NavLink to="/">
             <div className="nav_logo">
               <h1>saksar</h1>
+              <p>aroma home collection</p>
             </div>
           </NavLink>
           <div className="nav_right_items">

@@ -158,7 +158,8 @@ a {
 }
 .contacts_page footer .footer_links div p,
 .contacts_page footer .footer_nav_list .footer_nav_menu_item p,
-.contacts_page footer .footer_logo h1 {
+.contacts_page footer .footer_logo h1,
+.contacts_page footer .footer_logo p {
   color: #ffffff;
 }
 .contacts_page footer .footer_instagram svg * {

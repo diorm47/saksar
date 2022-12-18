@@ -43,15 +43,27 @@ nav {
 .nav_logo {
   cursor: pointer;
   margin-right: -100px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
 }
 .nav_logo h1 {
   font-family: "Cormorant Garamond";
-  font-weight: 500;
+  font-weight: 550;
   font-size: 48px;
-  line-height: 57px;
   letter-spacing: 0.155em;
   text-transform: uppercase;
   color: #000000;
+}
+.nav_logo p {
+  font-family: "Cormorant Garamond";
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 1.7px;
+  text-transform: uppercase;
+  color: #000000d1;
+  align-items: center;
 }
 
 .nav_basket {
@@ -206,6 +218,9 @@ nav {
 
   .nav_logo h1 {
     font-size: 35px;
+  }
+  .nav_logo p {
+    font-size: 9px;
   }
   .founder_img {
     width: 100%;
