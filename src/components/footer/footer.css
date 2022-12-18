@@ -25,7 +25,6 @@ footer {
   font-family: "Cormorant Garamond";
   font-weight: 500;
   font-size: 50px;
-  line-height: 49px;
   text-transform: uppercase;
   color: #000000;
 }
@@ -38,7 +37,6 @@ footer {
   color: #000000d1;
   align-items: center;
 }
-
 
 .footer_nav_list {
   display: flex;
