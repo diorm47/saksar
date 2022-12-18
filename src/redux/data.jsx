@@ -224,7 +224,7 @@ export const items = [
     id: 14,
     name: "Кофемагия",
     type: "Spa-набор для тела",
-    cart_img: "/product_images/cart-images/spa-кофемагия.jpg",
+    cart_img: "/product_images/cart-images/spa-Кофемагия.jpg",
     about_img: "/product_images/about-images/spa-Кофемагия.jpg",
     price: 2990,
     count: 1,
