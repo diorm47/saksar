@@ -128,3 +128,20 @@ footer {
     margin: 10px;
   }
 }
+
+@media only screen and (max-width: 500px) {
+  .footer_link_items {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .policy_link p {
+    text-align: center;
+  }
+  footer {
+    padding-top: 30px;
+  }
+  .footer_logo {
+    margin-bottom: 40px;
+  }
+}

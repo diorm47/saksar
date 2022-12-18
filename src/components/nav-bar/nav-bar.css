@@ -264,3 +264,15 @@ nav {
     right: 20%;
   }
 }
+
+@media only screen and (max-width: 430px) {
+  .nav_logo h1 {
+    margin-bottom: 5px;
+  }
+  .nav_logo p {
+    margin-top: 3px;
+  }
+  .nav_mobilie_menu div p {
+    font-size: 18px;
+  }
+}

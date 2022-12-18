@@ -61,3 +61,14 @@
     padding-top: 100px;
   }
 }
+
+@media only screen and (max-width: 500px) {
+  .catalog_page {
+    padding-top: 40px;
+  }
+  .catalog_title h1 {
+    text-align: center;
+    font-size: 26px;
+    margin-bottom: 15px;
+  }
+}

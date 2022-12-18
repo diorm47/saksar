@@ -147,9 +147,32 @@
   }
 }
 
-@media only screen and (max-width: 415px) {
-  .payment_delivery_title h1 {
-    font-size: 30px;
+@media only screen and (max-width: 490px) {
+  .payment_delivery_title h1,
+  .delivery_section_title h2 {
+    font-size: 23px;
     margin-bottom: 10px;
+  }
+  .payment_delivery_wrapper {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .payment_section_title h2 {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+  .paymetn_descriptions h3,
+  .delivery_descriptions h3 {
+    font-size: 17px;
+    margin-bottom: 10px;
+  }
+  .paymetn_descriptions p,
+  .delivery_descriptions p {
+    font-size: 13px;
+    margin-bottom: 8px;
+  }
+  .company_information p {
+    margin-bottom: 30px;
+    font-size: 15px;
   }
 }

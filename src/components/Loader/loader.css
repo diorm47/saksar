@@ -59,4 +59,8 @@
   .loader_wrapper h1 {
     font-size: 50px;
   }
+  .loader_wrapper p {
+    font-size: 12px;
+    letter-spacing: 2px;
+  }
 }

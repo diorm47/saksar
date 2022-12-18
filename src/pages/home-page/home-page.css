@@ -240,7 +240,7 @@
     padding-top: 0;
   }
   .history_brand_text {
-    padding: 0 30px;
+    padding: 0 15px;
     width: 100%;
   }
   .history_brand_wrapper {
@@ -296,5 +296,11 @@
   }
   .reviews {
     padding-bottom: 20px;
+  }
+  .history_brand_text {
+    margin-bottom: 20px;
+  }
+  .header_right_block h1 {
+    font-size: 17px;
   }
 }
