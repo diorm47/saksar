@@ -93,3 +93,18 @@
     font-size: 20px;
   }
 }
+
+.footer_form .contacts_policy_area {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+.footer_form .contacts_policy_area input {
+  margin: 0;
+  padding: 0;
+  width: 25px;
+  cursor: pointer;
+}
+.footer_form .contacts_policy_area p {
+  margin-left: 10px;
+}

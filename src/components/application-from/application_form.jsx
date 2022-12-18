@@ -2,15 +2,24 @@ import React, { useRef, useState } from "react";
 import emailjs from "emailjs-com";
 import Snackbar from "../snackbar/snackbar";
 import "./application_form.css";
+import { NavLink } from "react-router-dom";
 
 function ApplicationForm() {
   const [snackbar, setSnackbar] = useState(false);
+  const [policy, setPolicy] = useState(false);
   const [snackbarText, setSnackbarText] = useState("");
   const SERVICE_ID = "service_07yzqro";
   const TEMPLATE_ID = "template_iy74582";
   const USER_ID = "DSFmx66MwidL4OS8S";
 
   let form = useRef();
+  const policyToggle = () => {
+    if (policy) {
+      setPolicy(false);
+    } else {
+      setPolicy(true);
+    }
+  };
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -64,12 +73,24 @@ function ApplicationForm() {
               placeholder="Ваш e-mail"
             />
           </div>
-         
+          <div className="contacts_policy_area">
+            <input
+              type="checkbox"
+              name="policy"
+              id="policy"
+              onClick={policyToggle}
+            />
+            <p>
+              Даю согласия на обработку моих данных в рамках
+              <NavLink to="/policy"> политики конфиденциальности</NavLink>
+            </p>
+          </div>
 
           <input
             className="submit_btn"
             type="submit"
             value="Отправить заявку"
+            disabled={!policy}
           />
         </form>
       </div>

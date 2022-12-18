@@ -80,7 +80,7 @@ function ContactsPage() {
               />
               <p>
                 Даю согласия на обработку моих данных в рамках
-                <NavLink to="/policy"> политики понфиденциальности</NavLink>
+                <NavLink to="/policy"> политики конфиденциальности</NavLink>
               </p>
             </div>
 
