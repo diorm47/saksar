@@ -55,7 +55,7 @@ textarea {
 .checkout_form form .product_name_input textarea,
 .adress_input textarea {
   width: 300px;
-  height: 100px;
+  height: 150px;
 
   background: #ffffff;
   border: 1px solid rgba(0, 0, 0, 0.6);
@@ -102,4 +102,23 @@ textarea {
   .checkout_title h1 {
     text-align: center;
   }
+}
+
+.checkout_wrapper .contacts_policy_area {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  width: 300px;
+  margin-bottom: 15px;
+}
+.checkout_wrapper .contacts_policy_area input {
+  margin: 0;
+  padding: 0;
+  width: 25px;
+  cursor: pointer;
+}
+.checkout_wrapper .contacts_policy_area p {
+  margin-left: 10px;
+  font-size: 15px;
+  line-height: 100%;
 }

@@ -1,6 +1,7 @@
 import emailjs from "emailjs-com";
 import React, { useRef, useState } from "react";
 import { useSelector } from "react-redux";
+import { NavLink } from "react-router-dom";
 import Footer from "../../components/footer/footer";
 import Snackbar from "../../components/snackbar/snackbar";
 import "./checkout-page.css";
@@ -11,12 +12,20 @@ const CheckoutPage = () => {
     document.title = `Оформление заказа`;
   }, []);
   const [snackbar, setSnackbar] = useState(false);
+  const [policy, setPolicy] = useState(false);
   const [snackbarText, setSnackbarText] = useState("");
   const SERVICE_ID = "service_07yzqro";
   const TEMPLATE_ID = "template_iy74582";
   const USER_ID = "DSFmx66MwidL4OS8S";
 
   let form = useRef();
+  const policyToggle = () => {
+    if (policy) {
+      setPolicy(false);
+    } else {
+      setPolicy(true);
+    }
+  };
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -104,11 +113,24 @@ const CheckoutPage = () => {
                   placeholder="Ваш адресс"
                 />
               </div>
+              <div className="contacts_policy_area">
+                <input
+                  type="checkbox"
+                  name="policy"
+                  id="policy"
+                  onClick={policyToggle}
+                />
+                <p>
+                  Даю согласия на обработку моих данных в рамках
+                  <NavLink to="/policy"> политики конфиденциальности</NavLink>
+                </p>
+              </div>
 
               <input
                 className="submit_btn"
                 type="submit"
                 value="Оформить заказ"
+                disabled={!policy}
               />
             </form>
           </div>
