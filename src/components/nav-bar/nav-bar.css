@@ -45,7 +45,8 @@ nav {
   margin-right: -100px;
 }
 .nav_logo h1 {
-  font-weight: 700;
+  font-family: "Cormorant Garamond";
+  font-weight: 500;
   font-size: 48px;
   line-height: 57px;
   letter-spacing: 0.155em;
@@ -248,5 +249,3 @@ nav {
     right: 20%;
   }
 }
-
-

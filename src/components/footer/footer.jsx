@@ -3,8 +3,6 @@ import "./footer.css";
 
 import { NavLink } from "react-router-dom";
 
-import { ReactComponent as Instagram } from "../../assets/icons/instagramm.svg";
-
 function Footer() {
   return (
     <footer>
@@ -48,37 +46,31 @@ function Footer() {
           </div>
         </div>
         <div className="footer_links">
-          <a
-            className="contact_item"
-            href="mailto:saksar_aroma@mail.ru"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <div className="footer_email">
-              <p>saksar_aroma@mail.ru</p>
+          <div className="footer_link_items">
+            <a
+              className="contact_item"
+              href="mailto:saksar_aroma@mail.ru"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <div className="footer_email">
+                <p>saksar_aroma@mail.ru</p>
+              </div>
+            </a>
+            <div className="vertical_line">
+              <span>|</span>
             </div>
-          </a>
-          <div className="vertical_line">
-            <span>|</span>
+            <a href="tel:+79099772280">
+              <div className="footer_phone_number">
+                <p>+79099772280</p>
+              </div>
+            </a>
           </div>
-          <a href="tel:+79099772280">
-            <div className="footer_phone_number">
-              <p>+79099772280</p>
-            </div>
-          </a>
-          <div className="vertical_line">
-            <span>|</span>
+          <div className="policy_link">
+            <NavLink to="/policy">
+              <p>Политика конфиденциальности</p>
+            </NavLink>
           </div>
-          <a
-            href="https://instagram.com/saksar_homecollection?igshid=YmMyMTA2M2Y="
-            target="_blank"
-            rel="noreferrer"
-          >
-            <div className="footer_instagram">
-              <Instagram />
-              <p>saksar</p>
-            </div>
-          </a>
         </div>
       </div>
     </footer>

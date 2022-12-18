@@ -1,7 +1,7 @@
 footer {
   width: 100%;
   padding: 100px;
-  padding-bottom: 80px;
+  padding-bottom: 40px;
 }
 
 .footer_wrapper {
@@ -16,9 +16,10 @@ footer {
 
   margin-bottom: 50px;
 }
-.footer_logo {
-  font-weight: 700;
-  font-size: 25px;
+.footer_logo h1 {
+  font-family: "Cormorant Garamond";
+  font-weight: 500;
+  font-size: 50px;
   line-height: 49px;
   text-transform: uppercase;
   color: #000000;
@@ -44,9 +45,10 @@ footer {
   font-size: 25px;
 }
 
-.footer_links {
+.footer_links .footer_link_items {
   display: flex;
   align-items: center;
+  margin-bottom: 10px;
 }
 .footer_links div {
   cursor: pointer;
@@ -68,18 +70,10 @@ footer {
   opacity: 0.42;
   margin: 0 14px;
 }
-.footer_instagram {
-  display: flex;
-  align-items: center;
-  transition: all 0.5s ease;
-}
-.footer_instagram:hover svg * {
-  fill: #000;
-  opacity: 1;
-  transition: all 0.5s ease;
-}
-.footer_instagram p {
-  margin-left: 12px;
+.policy_link a p {
+  font-size: 16px;
+  text-transform: lowercase;
+  text-transform: capitalize;
 }
 
 @media only screen and (max-width: 1750px) {

@@ -1,9 +1,9 @@
-import React, { useRef, useState } from "react";
 import emailjs from "emailjs-com";
-import Snackbar from "../../components/snackbar/snackbar";
-import instagramm_icon from "../../assets/icons/instagramm_icon.png";
+import React, { useRef, useState } from "react";
+import { NavLink } from "react-router-dom";
 import vk_icon from "../../assets/icons/vk_icon.png";
 import Footer from "../../components/footer/footer";
+import Snackbar from "../../components/snackbar/snackbar";
 import "./contacts-page.css";
 
 function ContactsPage() {
@@ -11,12 +11,20 @@ function ContactsPage() {
     document.title = `Наши контакты`;
   }, []);
   const [snackbar, setSnackbar] = useState(false);
+  const [policy, setPolicy] = useState(false);
   const [snackbarText, setSnackbarText] = useState("");
   const SERVICE_ID = "service_07yzqro";
   const TEMPLATE_ID = "template_iy74582";
   const USER_ID = "DSFmx66MwidL4OS8S";
 
   let form = useRef();
+  const policyToggle = () => {
+    if (policy) {
+      setPolicy(false);
+    } else {
+      setPolicy(true);
+    }
+  };
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -37,7 +45,6 @@ function ContactsPage() {
         setTimeout(() => {
           setSnackbar(false);
         }, 2000);
-        form.current.reset();
       }
     );
   };
@@ -64,12 +71,25 @@ function ContactsPage() {
             <div className="contacts_comment_input">
               <input placeholder="комментарии" name="comments" required />
             </div>
+            <div className="contacts_policy_area">
+              <input
+                type="checkbox"
+                name="policy"
+                id="policy"
+                onClick={policyToggle}
+              />
+              <p>
+                Даю согласия на обработку моих данных в рамках
+                <NavLink to="/policy"> политики понфиденциальности</NavLink>
+              </p>
+            </div>
 
             <div className="contacts_submit_btn">
               <input
                 className="submit_btn"
                 type="submit"
                 value="Отправить заявку"
+                disabled={!policy}
               />
             </div>
           </form>
@@ -102,7 +122,6 @@ function ContactsPage() {
           </p>
           <div className="contacts_icons">
             <img src={vk_icon} alt="vk_icon" />
-            <img src={instagramm_icon} alt="instagramm_icon" />
           </div>
         </div>
       </div>

@@ -8,36 +8,41 @@ import { NavLink } from "react-router-dom";
 function HomeProducts() {
   return (
     <>
-      <NavLink to="/diffusers">
-        <div className="home_product_cart">
-          <div className="home_product_cart_img">
-            <img src={aromadiffuzors} alt="Аромадиффузоры" />
-          </div>
-          <div className="home_product_cart_title">
-            <p>Аромадиффузоры</p>
-          </div>
+      <div className="home_product_cart">
+        <div className="home_product_cart_img">
+          <img src={aromadiffuzors} alt="Аромадиффузоры" />
         </div>
-      </NavLink>
-      <NavLink to="/scrubs">
-        <div className="home_product_cart">
-          <div className="home_product_cart_img">
-            <img src={scrabs} alt="scrabs" />
-          </div>
-          <div className="home_product_cart_title">
-            <p>Скрабы</p>
-          </div>
+        <div className="home_product_cart_title">
+          <p>Аромадиффузоры</p>
+          <NavLink to="/diffusers">
+            <span>Перейти в каталог</span>
+          </NavLink>
         </div>
-      </NavLink>
-      <NavLink to="/spa-sets">
-        <div className="home_product_cart">
-          <div className="home_product_cart_img">
-            <img src={spa} alt="spa" />
-          </div>
-          <div className="home_product_cart_title">
-            <p>Spa-наборы для тела</p>
-          </div>
+      </div>
+
+      <div className="home_product_cart">
+        <div className="home_product_cart_img">
+          <img src={scrabs} alt="scrabs" />
         </div>
-      </NavLink>
+        <div className="home_product_cart_title">
+          <p>Скрабы</p>
+          <NavLink to="/scrubs">
+            <span>Перейти в каталог</span>
+          </NavLink>
+        </div>
+      </div>
+
+      <div className="home_product_cart">
+        <div className="home_product_cart_img">
+          <img src={spa} alt="spa" />
+        </div>
+        <div className="home_product_cart_title">
+          <p>Spa-наборы для тела</p>
+          <NavLink to="/spa-sets">
+            <span>Перейти в каталог</span>
+          </NavLink>
+        </div>
+      </div>
     </>
   );
 }

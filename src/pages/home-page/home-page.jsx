@@ -1,12 +1,12 @@
 import React from "react";
-import "./home-page.css";
+import { NavLink } from "react-router-dom";
+import authograph from "../../assets/images/authograph.png";
+import founder_img from "../../assets/images/founder-img.jpg";
 import header_left_img from "../../assets/images/header-left-img.png";
 import header_right_img from "../../assets/images/header-right-img.png";
-import founder_img from "../../assets/images/founder-img.jpg";
-import authograph from "../../assets/images/authograph.png";
-import HomeProducts from "../../components/home_products_links/home-products";
-import ApplicationForm from "../../components/application-from/application_form";
 import Footer from "../../components/footer/footer";
+import HomeProducts from "../../components/home_products_links/home-products";
+import "./home-page.css";
 
 function HomePage() {
   React.useEffect(() => {
@@ -22,7 +22,9 @@ function HomePage() {
           <div className="header_right_block">
             <div className="header_text">
               <div className="before_text_line"></div>
-              <h1>Выбери свой аромат для дома</h1>
+              <NavLink to="/diffusers">
+                <h1>Выбери свой аромат для дома</h1>
+              </NavLink>
             </div>
             <img src={header_right_img} alt="header_right_img" />
           </div>
@@ -66,14 +68,14 @@ function HomePage() {
       <section className="home_products">
         <div className="home_products_wrapper">
           <div className="home_products_title">
-            <h3>Продукты</h3>
+            <h3>Популярные продукты</h3>
           </div>
           <div className="home_product_items">
             <HomeProducts />
           </div>
         </div>
       </section>
-      <section className="reviews">
+      {/* <section className="reviews">
         <div className="reviewer_name">
           <h3>Алина Олеговна</h3>
         </div>
@@ -86,10 +88,8 @@ function HomePage() {
             <p>Отзыв о диффузоре</p>
           </div>
         </div>
-      </section>
-      <section>
-        <ApplicationForm />
-      </section>
+      </section> */}
+
       <Footer />
     </>
   );

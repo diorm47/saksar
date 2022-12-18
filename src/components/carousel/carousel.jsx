@@ -92,16 +92,16 @@ function Carousel() {
       <Slider {...settings}>
         {items.map((item) => (
           <div className="card_item" key={item.id}>
-            <div className="cart_image">
+            <div className="cart_image" onClick={() => aboutItem(item)}>
               <img src={item.cart_img} alt={item.cart_img} />
             </div>
-            <div className="cart_description">
+            <div className="cart_description" onClick={() => aboutItem(item)}>
               <p>{item.type}</p>
             </div>
             <div className="cart_product_name" onClick={() => aboutItem(item)}>
               <p>{item.name}</p>
             </div>
-            <div className="cart_product_price">
+            <div className="cart_product_price" onClick={() => aboutItem(item)}>
               <p>{item.price} ₽</p>
             </div>
             <div

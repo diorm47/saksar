@@ -64,6 +64,7 @@ function ApplicationForm() {
               placeholder="Ваш e-mail"
             />
           </div>
+         
 
           <input
             className="submit_btn"
