@@ -108,6 +108,9 @@ footer {
   .footer_logo {
     margin-bottom: 20px;
   }
+  .footer_logo h1 {
+    line-height: 110%;
+  }
 }
 
 @media only screen and (max-width: 610px) {
