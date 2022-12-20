@@ -1,7 +1,7 @@
 .payment_delivery {
   width: 100%;
   height: 100%;
-  padding-top: 150px;
+  padding-top: 100px;
   display: flex;
   align-items: center;
 
@@ -14,10 +14,10 @@
 
 .payment_delivery_title h1 {
   text-align: center;
-  margin-bottom: 90px;
+  margin-bottom: 60px;
   font-weight: 700;
-  font-size: 58px;
-  line-height: 69px;
+  font-size: 35px;
+
   text-transform: uppercase;
   color: #000000;
 }
@@ -25,51 +25,53 @@
 .payment_section_title h2 {
   text-align: center;
   font-weight: 700;
-  font-size: 48px;
-  line-height: 57px;
+  font-size: 25px;
+
   text-transform: uppercase;
   color: #000000;
-  margin-bottom: 100px;
+  margin-bottom: 60px;
 }
 .paymetn_descriptions h3 {
-  margin-bottom: 40px;
+  margin-top: 60px;
+  margin-bottom: 20px;
   font-weight: 700;
-  font-size: 38px;
-  line-height: 45px;
+  font-size: 22px;
+
   text-transform: uppercase;
   color: #000000;
-  margin-top: 20px;
 }
 .paymetn_descriptions p {
-  margin-bottom: 50px;
+  margin-bottom: 20px;
   font-weight: 400;
-  font-size: 26px;
-  line-height: 33px;
+  font-size: 16px;
+  line-height: 150%;
   text-transform: uppercase;
   color: #000000c8;
 }
 
 .delivery_section_title h2 {
-  margin-top: 90px;
+  margin-top: 70px;
   font-weight: 700;
-  font-size: 48px;
-  line-height: 57px;
+  font-size: 25px;
+
   text-transform: uppercase;
   color: #000000;
   text-align: center;
 }
 .delivery_descriptions h3 {
-  margin: 55px 0 45px 0;
+  margin-top: 50px;
+  margin-bottom: 20px;
   font-weight: 700;
-  font-size: 38px;
-  line-height: 45px;
+  font-size: 22px;
+
   text-transform: uppercase;
   color: #000000;
 }
 .delivery_descriptions p {
+  margin-bottom: 20px;
   font-weight: 400;
-  font-size: 26px;
-  line-height: 33px;
+  font-size: 16px;
+  line-height: 150%;
   text-transform: uppercase;
   color: #000000;
 }
@@ -86,10 +88,13 @@
 .company_information p {
   margin-top: 100px;
   font-weight: 400;
-  font-size: 24px;
-  line-height: 33px;
+  font-size: 18px;
+  line-height: 150%;
   text-transform: uppercase;
   color: #000000;
+}
+.company_information span {
+  font-family: serif;
 }
 
 @media only screen and (max-width: 1200px) {

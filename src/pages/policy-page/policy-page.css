@@ -17,3 +17,19 @@
 .policy_text p {
   font-size: 18px;
 }
+
+@media only screen and (max-width: 700px) {
+  .policy_page_wrapper {
+    padding: 0 15px;
+  }
+  .policy_title h1 {
+    font-size: 23px;
+  }
+
+  .policy_text h1 {
+    font-size: 18px;
+  }
+  .policy_text p {
+    font-size: 13px;
+  }
+}

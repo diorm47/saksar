@@ -2,6 +2,7 @@
 .slick-active,
 .slick-current {
   width: 376px !important ;
-  height: 560px !important;
   margin-right: 10px;
+  margin-bottom: 10px;
+  margin-top: 10px;
 }

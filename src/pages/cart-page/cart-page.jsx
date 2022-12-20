@@ -95,7 +95,7 @@ function CartPage() {
                 </div>
                 <div className="in_cart_item_cost_del">
                   <div className="in_cart_item_cost">
-                    <p>{item.price} ₽</p>
+                    <p>{new Intl.NumberFormat("ru-RU").format(item.price)} ₽</p>
                   </div>
                   <div
                     className="del_item_from_cart"
@@ -115,11 +115,13 @@ function CartPage() {
             <div className="total_summ">
               <p>Итого: </p>
               <p>
-                {incart.reduce(
-                  (accumulator, current) =>
-                    accumulator + current.price * current.count,
-                  0
-                )}
+                {new Intl.NumberFormat("ru-RU").format(
+                  incart.reduce(
+                    (accumulator, current) =>
+                      accumulator + current.price * current.count,
+                    0
+                  )
+                )}{" "}
                 ₽
               </p>
             </div>

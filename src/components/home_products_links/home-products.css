@@ -26,7 +26,7 @@
 
 .home_product_cart_title p {
   font-weight: 700;
-  font-size: 25px;
+  font-size: 20px;
   line-height: 38px;
   text-transform: uppercase;
   color: #000000;
@@ -34,7 +34,7 @@
 }
 
 .home_product_cart_title a {
-  font-size: 12px;
+  font-size: 10px;
   text-transform: lowercase;
   text-transform: capitalize;
   transition: all 0.4s ease;

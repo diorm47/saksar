@@ -102,7 +102,7 @@ function Carousel() {
               <p>{item.name}</p>
             </div>
             <div className="cart_product_price" onClick={() => aboutItem(item)}>
-              <p>{item.price} ₽</p>
+              <p>{new Intl.NumberFormat("ru-RU").format(item.price)} ₽</p>
             </div>
             <div
               className={

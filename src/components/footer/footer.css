@@ -25,6 +25,7 @@ footer {
   font-family: "Cormorant Garamond";
   font-weight: 500;
   font-size: 50px;
+  line-height: 100%;
   text-transform: uppercase;
   color: #000000;
 }
@@ -35,6 +36,7 @@ footer {
   letter-spacing: 1.7px;
   text-transform: uppercase;
   color: #000000d1;
+  line-height: 100%;
   align-items: center;
 }
 
@@ -44,7 +46,7 @@ footer {
 }
 .footer_nav_list .footer_nav_menu_item p {
   font-weight: 700;
-  font-size: 22px;
+  font-size: 18px;
   line-height: 26px;
   text-transform: uppercase;
   color: #000000;
@@ -55,7 +57,7 @@ footer {
   opacity: 0.58;
 }
 .footer_nav_list .vertical_line {
-  font-size: 25px;
+  font-size: 18px;
 }
 
 .footer_links .footer_link_items {
@@ -72,8 +74,8 @@ footer {
 }
 .footer_links div p {
   font-weight: 700;
-  font-size: 20px;
-  line-height: 26px;
+  font-size: 17px;
+
   text-transform: uppercase;
   color: #000000;
   opacity: 0.42;
@@ -84,7 +86,7 @@ footer {
   margin: 0 14px;
 }
 .policy_link a p {
-  font-size: 16px;
+  font-size: 15px;
   text-transform: lowercase;
   text-transform: capitalize;
 }

@@ -1,9 +1,9 @@
 .contacts_title h1 {
-  margin-top: 150px;
-  margin-bottom: 250px;
+  margin-top: 120px;
+  margin-bottom: 100px;
   font-weight: 700;
-  font-size: 58px;
-  line-height: 69px;
+  font-size: 35px;
+
   text-transform: uppercase;
   color: #000000;
   text-align: center;
@@ -15,59 +15,55 @@
 }
 
 .contacts_form_wrapper h1 {
-  margin-bottom: 43px;
   font-weight: 700;
-  font-size: 38px;
-  line-height: 45px;
+  font-size: 22px;
+
   text-transform: uppercase;
   color: #000000;
 }
 .contacts_form_wrapper p {
-  margin-bottom: 150px;
+  margin-bottom: 30px;
   font-weight: 400;
-  font-size: 28px;
+  font-size: 15px;
   line-height: 33px;
   text-transform: uppercase;
   color: #000000;
 }
 .contacts_form div {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 .contacts_form div input {
   width: 100%;
   text-indent: 5px;
   font-weight: 400;
-  font-size: 19px;
-  line-height: 24px;
+  font-size: 16px;
+
   text-transform: uppercase;
   color: #918f8f;
   background: transparent;
   border: none;
-  padding: 15px 0;
+  padding: 10px 0;
   outline: none;
   border-bottom: 1px solid #000000;
 }
-.contacts_form div span {
-  color: red;
-  margin-top: 4px;
-}
+
 .contacts_form .submit_btn {
-  width: 297px;
-  height: 73px;
+  width: 200px;
+  height: 50px;
   margin: 0 auto;
-  margin-top: 60px;
+  margin-top: 30px;
   text-indent: 0;
   background: #000000;
   cursor: pointer;
-  font-family: "Jura";
-  font-size: 26px;
+  font-family: "Libre Baskerville";
+  font-size: 18px;
   line-height: 156.8%;
   text-align: center;
   color: #ffffff;
   transition: all 0.4s ease;
   border: none;
   border-radius: 10px;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 .contacts_form .submit_btn:hover {
   background: #000000c2;
@@ -81,9 +77,9 @@
 }
 
 .personal_inf p {
-  margin-bottom: 90px;
+  margin-bottom: 60px;
   font-weight: 400;
-  font-size: 15.8px;
+  font-size: 13px;
   line-height: 19px;
   text-transform: uppercase;
   color: #000000;
@@ -97,19 +93,19 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 125px 0 135px 230px;
+  padding: 100px 0 135px 230px;
 }
 
 .contacts_block {
-  width: 663px;
-  height: 520px;
-  padding: 75px 85px 0 75px;
+  width: 450px;
+
+  padding: 25px 25px 25px 30px;
   background: #ffffff;
 }
 .contacts_block_title h1 {
-  margin-bottom: 50px;
+  margin-bottom: 20px;
   font-weight: 700;
-  font-size: 38px;
+  font-size: 25px;
   line-height: 45px;
   text-transform: uppercase;
   color: #000000;
@@ -117,7 +113,7 @@
 .contacts_block p,
 a {
   font-weight: 400;
-  font-size: 21px;
+  font-size: 15px;
   line-height: 170.8%;
   text-transform: uppercase;
   color: #000000;
@@ -129,7 +125,7 @@ a {
 }
 .contacts_icons img {
   width: 40px;
-  margin-top: 60px;
+  margin-top: 20px;
   margin-left: 20px;
   cursor: pointer;
   transition: all 0.5s ease;
@@ -141,12 +137,12 @@ a {
 .company_documents {
   width: 1081px;
   margin: 0 auto;
-  padding: 55px 0 100px;
+  padding: 35px 0 40px;
 }
 
 .company_documents p {
   font-weight: 400;
-  font-size: 28px;
+  font-size: 18px;
   line-height: 33px;
   text-transform: uppercase;
   color: #000000;
@@ -178,6 +174,8 @@ a {
 }
 .contacts_form .contacts_policy_area p {
   padding-left: 10px;
+  text-align: center !important;
+  margin: 0 auto !important;
 }
 .contacts_form .contacts_policy_area p,
 a {
@@ -188,6 +186,9 @@ a {
 
 .contacts_form .contacts_policy_area p a {
   color: blue;
+}
+.company_documents span {
+  font-family: serif;
 }
 
 @media only screen and (max-width: 1120px) {
@@ -290,7 +291,7 @@ a {
 
 @media only screen and (max-width: 430px) {
   .contacts_block p {
-    font-size: 14px;
+    font-size: 12px;
   }
   .contacts_title h1 {
     margin: 15px 0;
@@ -315,7 +316,8 @@ a {
     line-height: 100%;
     padding: 10px 0;
   }
-  .contacts_form_wrapper .contacts_policy_area p, a {
+  .contacts_form_wrapper .contacts_policy_area p,
+  a {
     font-size: 9px;
     line-height: 140%;
   }

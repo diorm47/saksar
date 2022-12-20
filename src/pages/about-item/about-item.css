@@ -1,23 +1,13 @@
 .about_item_wrapper {
   width: 1547px;
   margin: 0 auto;
-}
-
-.about_item_title h1 {
-  margin-top: 200px;
-  margin-bottom: 100px;
-  font-weight: 700;
-  font-size: 38px;
-  line-height: 45px;
-  text-transform: uppercase;
-  color: #000000;
+  padding-top: 150px;
 }
 
 .about_item_content {
   display: flex;
   justify-content: space-between;
-  padding-bottom: 120px;
-  padding: 0 30px;
+  padding-bottom: 100px;
 }
 
 .about_item_img {
@@ -36,9 +26,9 @@
 }
 
 .about_item_type p {
-  margin-bottom: 18px;
+  margin-bottom: 12px;
   font-weight: 700;
-  font-size: 16px;
+  font-size: 15px;
   line-height: 20px;
   text-transform: uppercase;
   color: #000000;
@@ -48,30 +38,30 @@
 .about_item_name h2 {
   margin-bottom: 18px;
   font-weight: 700;
-  font-size: 50px;
+  font-size: 35px;
   line-height: 40px;
   text-transform: uppercase;
   color: #000000;
 }
 .about_right_block {
-  width: 50%;
+  width: 55%;
 }
 
 .about_item_description p {
   font-weight: 500;
-  font-size: 19px;
+  font-size: 18px;
   line-height: 130%;
   color: #464444;
   margin: 20px 0 10px;
 }
 .about_item_description span {
   font-weight: 600;
-  font-size: 22px;
+  font-size: 20px;
   color: black;
 }
 
 .compound_items p {
-   margin: 0 0;
+  margin: 0 0;
 }
 
 .diffuzor_notes div p {
@@ -79,22 +69,23 @@
 }
 .about_item_cost p {
   font-weight: 700;
-  font-size: 45px;
+  font-size: 28px;
   line-height: 30px;
   text-transform: uppercase;
   color: #000000;
-  margin-top: 60px;
+  margin-top: 30px;
 }
 
 .about_add_to_cart button {
+  font-family: "Libre Baskerville";
   margin-top: 60px;
-  width: 297px;
-  height: 73px;
+  width: 200px;
+  height: 60px;
   background: #000000;
   border-radius: 10px;
-  font-family: "Jura";
+
   font-weight: 600;
-  font-size: 26px;
+  font-size: 23px;
   line-height: 156.8%;
   text-align: center;
   color: #ffffff;
@@ -113,16 +104,16 @@
 }
 
 .carousel_block {
-  margin-top: 100px;
+  margin-top: 60px;
   margin-bottom: 20px;
 }
 .carousel_title h3 {
   font-weight: 700;
-  font-size: 38px;
+  font-size: 25px;
   line-height: 45px;
   text-transform: uppercase;
   color: #000000;
-  margin-bottom: 90px;
+  margin-bottom: 40px;
 }
 
 .music_play_stop {
@@ -159,9 +150,9 @@
 
 .about_item_inf .about_diffusors p {
   font-weight: 700;
-  font-size: 20px;
+  font-size: 18px;
   color: #474646;
-  margin-top: 60px;
+  margin-top: 30px;
   text-align: center;
 }
 
@@ -173,7 +164,7 @@
   }
 }
 
-@media only screen and (max-width: 1300px) {
+@media only screen and (max-width: 1450px) {
   .about_left_part {
     margin-right: 20px;
   }
@@ -250,6 +241,7 @@
     margin-top: 30px;
   }
   .about_add_to_cart button {
+    font-family: "Libre Baskerville";
     margin-top: 30px;
     width: 197px;
     height: 45px;

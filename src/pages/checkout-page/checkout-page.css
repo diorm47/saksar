@@ -5,7 +5,7 @@
 
 .checkout_title h1 {
   font-weight: 600;
-  font-size: 30px;
+  font-size: 25px;
   line-height: 156.8%;
   color: #000000;
   margin-bottom: 30px;
@@ -25,6 +25,7 @@
 .ch_count,
 .ch_total_price {
   margin: 10px 0;
+  font-family: serif;
 }
 
 .checkout_page {
@@ -36,7 +37,7 @@
 .checkout_form form input,
 textarea {
   color: #625f5f;
-  font-family: "Jura";
+  font-family: serif;
 }
 
 .checkout_form form input {
@@ -71,7 +72,7 @@ textarea {
   text-indent: 0;
   background: #000000;
   cursor: pointer;
-  font-family: "Jura";
+  font-family: "Libre Baskerville";
   font-size: 20px;
   text-align: center;
   color: #ffffff;
@@ -104,21 +105,16 @@ textarea {
   }
 }
 
-.checkout_wrapper .contacts_policy_area {
+.checkout_wrapper .polices_check {
   display: flex;
   align-items: center;
   flex-direction: row;
   width: 300px;
   margin-bottom: 15px;
 }
-.checkout_wrapper .contacts_policy_area input {
-  margin: 0;
-  padding: 0;
-  width: 25px;
-  cursor: pointer;
-}
-.checkout_wrapper .contacts_policy_area p {
-  margin-left: 10px;
+
+.checkout_wrapper .polices_check p {
   font-size: 15px;
   line-height: 100%;
+  text-align: center;
 }

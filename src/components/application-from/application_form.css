@@ -5,8 +5,7 @@
 }
 .footer_title h3 {
   font-weight: 500;
-  font-size: 32px;
-  line-height: 156.8%;
+  font-size: 25px;
   color: #000000;
 }
 .footer_form {
@@ -21,21 +20,21 @@
 
 .footer_form form input {
   width: 297px;
-  height: 73px;
-  text-indent: 19px;
+  height: 60px;
+  text-indent: 12px;
   background: #ffffff;
   border: 1px solid rgba(0, 0, 0, 0.6);
   border-radius: 10px;
   outline: none;
 
   font-weight: 500;
-  font-size: 26px;
-  line-height: 156.8%;
+  font-size: 18px;
+
 }
 
 .footer_form form div input {
   color: #625f5f;
-  font-family: "Jura";
+  font-family: "Libre Baskerville";
 }
 .footer_form form div {
   display: flex;
@@ -50,9 +49,9 @@
   text-indent: 0;
   background: #000000;
   cursor: pointer;
-  font-family: "Jura";
-  font-size: 26px;
-  line-height: 156.8%;
+  font-family: "Libre Baskerville";
+  font-size: 20px;
+
   text-align: center;
   color: #ffffff;
   transition: all 0.4s ease;
@@ -99,12 +98,8 @@
   align-items: center;
   flex-direction: row;
 }
-.footer_form .contacts_policy_area input {
-  margin: 0;
-  padding: 0;
-  width: 25px;
-  cursor: pointer;
-}
+
 .footer_form .contacts_policy_area p {
   margin-left: 10px;
+  text-align: center;
 }

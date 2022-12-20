@@ -15,7 +15,7 @@
   z-index: 444;
   background: #ffd1b2;
   overflow: hidden;
-  color: #fff;
+  color: #000;
   animation-name: loader_text;
   animation-duration: 1s;
   animation-iteration-count: infinite;
@@ -24,18 +24,18 @@
 .loader_wrapper h1 {
   font-family: "Cormorant Garamond";
   font-weight: 500;
-  color: #fff;
+  color: #000;
   text-align: center;
   font-size: 120px;
   letter-spacing: 3px;
   line-height: 100%;
 }
 .loader_wrapper p {
-  color: #fff;
+  color: #000;
   font-family: "Cormorant Garamond";
   font-weight: 600;
-  font-size: 25px;
-  letter-spacing: 5px;
+  font-size: 27px;
+  letter-spacing: 4.5px;
   text-transform: uppercase;
   color: #000000d1;
   align-items: center;

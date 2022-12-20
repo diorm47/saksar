@@ -91,8 +91,8 @@ function PaymentDelivery() {
           <div className="company_information">
             <p>
               ИП Какорина Венера Салаватовна <br />
-              ИНН: 027501564500 <br />
-              ОГРНИП: 322508100341551 <br />
+              ИНН: <span>027501564500 </span><br />
+              ОГРНИП: <span>322508100341551</span> <br />
             </p>
           </div>
         </div>

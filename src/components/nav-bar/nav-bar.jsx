@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 import "./nav-bar.css";
 import burger_menu from "../../assets/icons/menu_icon.png";
 import close_menu from "../../assets/icons/menu_close.png";
-import { ReactComponent as BasketIcon } from "../../assets/icons/basket-icon.svg";
+import basketIcon from "../../assets/icons/basket-icon.png";
 import { useSelector } from "react-redux";
 
 function NavBar() {
@@ -70,7 +70,7 @@ function NavBar() {
               ""
             )}
             <NavLink to="/cart">
-              <BasketIcon />
+              <img src={basketIcon} alt="basketIcon" />
             </NavLink>
           </div>
         </div>

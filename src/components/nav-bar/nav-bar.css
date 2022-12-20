@@ -19,8 +19,8 @@ nav {
 }
 
 .vertical_line {
-  margin: 0 17px;
-  font-size: 22px;
+  margin: 0 10px;
+  font-size: 18px;
 }
 .nav_left_items .active,
 .nav_right_items .active {
@@ -29,7 +29,7 @@ nav {
 
 .nav_menu_item p {
   font-weight: 700;
-  font-size: 22px;
+  font-size: 18px;
   line-height: 26px;
   text-transform: uppercase;
   color: #000000;
@@ -55,11 +55,13 @@ nav {
   letter-spacing: 0.155em;
   text-transform: uppercase;
   color: #000000;
+  line-height: 100%;
 }
 .nav_logo p {
   font-family: "Cormorant Garamond";
   font-weight: 600;
   font-size: 14px;
+  line-height: 100%;
   letter-spacing: 1.7px;
   text-transform: uppercase;
   color: #000000d1;
@@ -69,12 +71,17 @@ nav {
 .nav_basket {
   position: absolute;
   right: 3%;
-  padding: 10px;
+  width: 45px;
+  height: 45px;
   transition: all 0.5s ease;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
+  padding-top: 6px;
+}
+.nav_basket img {
+  width: 35px;
 }
 .nav_basket:hover {
   transition: all 0.5s ease;
@@ -83,8 +90,8 @@ nav {
 
 .selected_length {
   position: absolute;
-  width: 29px;
-  height: 29px;
+  width: 23px;
+  height: 23px;
   background: #ffdabf;
   border-radius: 50%;
   display: flex;
@@ -95,8 +102,9 @@ nav {
   cursor: pointer;
 }
 .selected_length p {
+  font-family: serif;
   font-weight: 600;
-  font-size: 16px;
+  font-size: 15px;
   line-height: 19px;
   color: #000000;
 }
@@ -251,7 +259,7 @@ nav {
 }
 
 @media only screen and (max-width: 460px) {
-  .nav_basket svg {
+  .nav_basket img {
     width: 25px;
     height: 25px;
   }
@@ -266,13 +274,7 @@ nav {
 }
 
 @media only screen and (max-width: 430px) {
-  .nav_logo h1 {
-    margin-bottom: 5px;
-  }
-  .nav_logo p {
-    margin-top: 3px;
-  }
   .nav_mobilie_menu div p {
-    font-size: 18px;
+    font-size: 17px;
   }
 }

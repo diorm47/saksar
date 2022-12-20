@@ -70,11 +70,6 @@ function AboutItem() {
   return (
     <>
       <div className="about_item_wrapper">
-        <div className="about_item_title">
-          <h1>
-            {item.type} - {item.name}
-          </h1>
-        </div>
         <div className="about_item_content">
           <div className="about_left_part">
             <div className="about_item_img">
@@ -174,7 +169,7 @@ function AboutItem() {
               )}
             </div>
             <div className="about_item_cost">
-              <p>{item.price} ₽</p>
+              <p>{new Intl.NumberFormat("ru-RU").format(item.price)} ₽</p>
             </div>
             <div className="about_add_to_cart">
               <button onClick={() => addToCartt(item)}>

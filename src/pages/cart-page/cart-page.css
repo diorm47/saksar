@@ -1,22 +1,22 @@
 .cart_page {
   width: 1547px;
   margin: 0 auto;
-  padding-top: 140px;
+  padding-top: 100px;
 }
 
 .cart_navigation p {
   font-weight: 600;
-  font-size: 20px;
+  font-size: 16px;
   line-height: 156.8%;
   color: #000000;
   opacity: 0.5;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .cart_page_title h1 {
-  margin-bottom: 60px;
+  margin-bottom: 30px;
   font-weight: 600;
-  font-size: 36px;
+  font-size: 26px;
   line-height: 156.8%;
   color: #000000;
 }
@@ -33,12 +33,12 @@
   align-items: center;
   justify-content: space-between;
   border-bottom: 1px solid rgba(0, 0, 0, 0.34);
-  padding-bottom: 60px;
-  padding-top: 60px;
+  padding-bottom: 20px;
+  padding-top: 20px;
 }
 .incart_item_img {
   width: 250px;
-  height: 220px;
+
   overflow: hidden;
 }
 .incart_item_img img {
@@ -49,19 +49,20 @@
 }
 .in_cart_description p {
   font-weight: 500;
-  font-size: 26px;
+  font-size: 16px;
   line-height: 156.8%;
   color: #000000;
   opacity: 0.5;
 }
 .in_cart_description h4 {
   font-weight: 700;
-  font-size: 24px;
+  font-size: 20px;
   line-height: 156.8%;
   color: #000000;
   margin-bottom: 10px;
   cursor: pointer;
   transition: all 1s ease;
+  font-family: serif;
 }
 
 .in_cart_description h4:hover {
@@ -88,8 +89,8 @@
 }
 
 .in_item_calculator {
-  width: 81px;
-  height: 52px;
+  width: 70px;
+  height: 40px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -100,15 +101,17 @@
 
 .in_item_calculator p {
   font-weight: 600;
-  font-size: 18.6465px;
-  line-height: 156.8%;
+  font-size: 18px;
   text-align: center;
   color: #ffffff;
   cursor: pointer;
+  font-family: serif;
 }
 .in_cart_item_cost p {
+  font-family: serif;
+  
   font-weight: 600;
-  font-size: 30px;
+  font-size: 25px;
   line-height: 100%;
   text-align: center;
   color: #000000;
@@ -117,11 +120,11 @@
 
 .del_item_from_cart button {
   margin-top: 40px;
-  width: 130px;
-  height: 50px;
-  font-family: "Jura";
+  width: 100px;
+  height: 40px;
+  font-family: "Libre Baskerville";
   font-weight: 600;
-  font-size: 26px;
+  font-size: 20px;
   line-height: 156.8%;
   text-align: center;
   color: #000000;
@@ -145,26 +148,29 @@
 }
 
 .total_summ {
-  width: 297px;
+  width: 200px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin: 60px 0 40px;
+  
 }
 .total_summ p {
   font-weight: 600;
-  font-size: 26px;
+  font-size: 22px;
   line-height: 156.8%;
   color: #000000;
+  font-family: serif;
+
 }
 .checkout_btn button {
-  width: 297px;
-  height: 73px;
+  width: 200px;
+  height: 50px;
   background: #000000;
-  font-family: "Jura";
+  font-family: "Libre Baskerville";
   border-radius: 10px;
   font-weight: 500;
-  font-size: 26px;
+  font-size: 19px;
   line-height: 156.8%;
   text-align: center;
   color: #ffffff;
@@ -242,6 +248,7 @@
     padding: 0;
   }
   .del_item_from_cart button {
+    font-family: "Libre Baskerville";
     margin: 0;
   }
   .cart_page {

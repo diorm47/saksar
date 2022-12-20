@@ -11,20 +11,13 @@ function ContactsPage() {
     document.title = `Наши контакты`;
   }, []);
   const [snackbar, setSnackbar] = useState(false);
-  const [policy, setPolicy] = useState(false);
+
   const [snackbarText, setSnackbarText] = useState("");
   const SERVICE_ID = "service_07yzqro";
   const TEMPLATE_ID = "template_iy74582";
   const USER_ID = "DSFmx66MwidL4OS8S";
 
   let form = useRef();
-  const policyToggle = () => {
-    if (policy) {
-      setPolicy(false);
-    } else {
-      setPolicy(true);
-    }
-  };
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -72,15 +65,9 @@ function ContactsPage() {
               <input placeholder="комментарии" name="comments" required />
             </div>
             <div className="contacts_policy_area">
-              <input
-                type="checkbox"
-                name="policy"
-                id="policy"
-                onClick={policyToggle}
-              />
               <p>
-                Даю согласия на обработку моих данных в рамках
-                <NavLink to="/policy"> политики конфиденциальности</NavLink>
+                Отправляя форму, вы даете свое согласие на обработку
+                <NavLink to="/policy"> персональных данных</NavLink>
               </p>
             </div>
 
@@ -89,16 +76,9 @@ function ContactsPage() {
                 className="submit_btn"
                 type="submit"
                 value="Отправить заявку"
-                disabled={!policy}
               />
             </div>
           </form>
-          <div className="personal_inf">
-            <p>
-              Нажимая на кнопку, вы даете согласие на обработку персональных
-              данных и соглашаетесь c политикой конфиденциальности
-            </p>
-          </div>
         </div>
       </div>
       <div className="contacts_cart">
@@ -128,8 +108,8 @@ function ContactsPage() {
       <div className="company_documents">
         <p>
           ИП Какорина Венера Салаватовна <br />
-          ИНН: 027501564500 <br />
-          ОГРНИП: 322508100341551
+          ИНН: <span>027501564500</span> <br />
+          ОГРНИП: <span>322508100341551</span>
         </p>
       </div>
       <Footer />
