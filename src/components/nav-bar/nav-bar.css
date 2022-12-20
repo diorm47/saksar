@@ -277,4 +277,14 @@ nav {
   .nav_mobilie_menu div p {
     font-size: 17px;
   }
+
+  .selected_length {
+    width: 17px;
+    height: 17px;
+    margin-top: -25px;
+    margin-right: -20px;
+  }
+  .selected_length p {
+    font-size: 12px;
+  }
 }
