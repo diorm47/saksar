@@ -5,22 +5,23 @@ import "./card.css";
 import { useDispatch, useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import { addToCart } from "../../redux/cart-reducer";
-import Snackbar from "../snackbar/snackbar";
+import Modal from "../modal/modal";
 
 function Card({ item }) {
   const navigate = useNavigate();
   const dispatch = useDispatch();
   const inCart = useSelector((state) => state.cart.cart);
-  const [snackbar, setSnackbar] = useState(false);
+
+  const [modal, setModal] = useState(false);
+  const [modalItem, setModalItem] = useState({});
 
   const addToCartt = (data) => {
     const isItemInCart = inCart.some((item) => item.id === data.id);
     if (!isItemInCart) {
       dispatch(addToCart(data));
-      setSnackbar(true);
-      setTimeout(() => {
-        setSnackbar(false);
-      }, 2000);
+
+      setModal(true);
+      setModalItem(data);
     }
   };
 
@@ -35,6 +36,8 @@ function Card({ item }) {
 
   return (
     <>
+      {!modal || <Modal setModal={setModal} item={modalItem} />}
+
       {item.map((item) => (
         <div className="card_item" key={item.id}>
           <div className="cart_image" onClick={() => aboutItem(item)}>
@@ -61,7 +64,6 @@ function Card({ item }) {
           </div>
         </div>
       ))}
-      {!snackbar || <Snackbar props="Товар добавлен в корзину" />}
     </>
   );
 }

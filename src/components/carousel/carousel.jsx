@@ -4,9 +4,12 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick-theme.css";
 import "slick-carousel/slick/slick.css";
 import "../../components/card/card.css";
+import Modal from "../modal/modal";
 import "./carousel.css";
 
 import { useState } from "react";
+import { ReactComponent as LeftArrow } from "../../assets/icons/left_arrow.svg";
+import { ReactComponent as RightArrow } from "../../assets/icons/right_arrow.svg";
 
 import plusIcon from "../../assets/icons/add_to_cart_icon.png";
 
@@ -14,22 +17,46 @@ import { useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import { addToCart } from "../../redux/cart-reducer";
 import { items } from "../../redux/data";
-import Snackbar from "../snackbar/snackbar";
+
+function SampleNextArrow(props) {
+  const { className, style, onClick } = props;
+  return (
+    <div
+      className={className}
+      style={{ ...style, display: "block" }}
+      onClick={onClick}
+    >
+      <RightArrow />
+    </div>
+  );
+}
+
+function SamplePrevArrow(props) {
+  const { className, style, onClick } = props;
+  return (
+    <div
+      className={className}
+      style={{ ...style, display: "block" }}
+      onClick={onClick}
+    >
+      <LeftArrow />
+    </div>
+  );
+}
 
 function Carousel() {
   const navigate = useNavigate();
   const dispatch = useDispatch();
   const inCart = useSelector((state) => state.cart.cart);
-  const [snackbar, setSnackbar] = useState(false);
+  const [modal, setModal] = useState(false);
+  const [modalItem, setModalItem] = useState({});
 
   const addToCartt = (data) => {
     const isItemInCart = inCart.some((item) => item.id === data.id);
     if (!isItemInCart) {
       dispatch(addToCart(data));
-      setSnackbar(true);
-      setTimeout(() => {
-        setSnackbar(false);
-      }, 2000);
+      setModal(true);
+      setModalItem(data);
     }
   };
   const aboutItem = (item) => {
@@ -47,6 +74,8 @@ function Carousel() {
     speed: 500,
     slidesToShow: 4,
     slidesToScroll: 3,
+    nextArrow: <SampleNextArrow />,
+    prevArrow: <SamplePrevArrow />,
     responsive: [
       {
         breakpoint: 1600,
@@ -89,6 +118,7 @@ function Carousel() {
 
   return (
     <>
+      {!modal || <Modal setModal={setModal} item={modalItem} />}
       <Slider {...settings}>
         {items.map((item) => (
           <div className="card_item" key={item.id}>
@@ -117,7 +147,6 @@ function Carousel() {
           </div>
         ))}
       </Slider>
-      {!snackbar || <Snackbar props="Товар добавлен в корзину" />}
     </>
   );
 }

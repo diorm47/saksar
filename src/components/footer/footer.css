@@ -90,7 +90,10 @@ footer {
   text-transform: lowercase;
   text-transform: capitalize;
 }
-
+.footer_phone_number p {
+  font-family: serif;
+  font-size: 21px !important;
+}
 @media only screen and (max-width: 1750px) {
   footer {
     padding-left: 30px;

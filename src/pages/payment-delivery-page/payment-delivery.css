@@ -49,6 +49,10 @@
   color: #000000c8;
 }
 
+.delivery_section span {
+  font-family: serif;
+  font-size: 17px;
+}
 .delivery_section_title h2 {
   margin-top: 70px;
   font-weight: 700;

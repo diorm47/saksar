@@ -54,7 +54,8 @@ textarea {
   margin-bottom: 18px;
 }
 .checkout_form form .product_name_input textarea,
-.adress_input textarea {
+.adress_input textarea,
+.contacts_comment_input textarea {
   width: 300px;
   height: 150px;
 
@@ -81,6 +82,27 @@ textarea {
 .checkout_form form .submit_btn:hover {
   background: #000000c2;
   transition: all 0.4s ease;
+}
+.del_method_check {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.del_method_check p {
+  text-transform: uppercase;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+.del_method_check select {
+  width: 300px;
+  margin-bottom: 20px;
+  height: 40px;
+  cursor: pointer;
+  outline: none;
+  text-transform: uppercase;
+  color: #625f5f;
+  text-indent: 10px;
 }
 
 @media only screen and (max-width: 880px) {

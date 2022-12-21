@@ -87,7 +87,10 @@ function ContactsPage() {
             <h1>Контакты</h1>
           </div>
           <p>
-            <a href="tel:+79099772280">+7 909 977 22 80 </a> <br />
+            <a href="tel:+79099772280">
+              <span>+7 909 977 22 80</span>{" "}
+            </a>{" "}
+            <br />
             <a
               className="contact_item"
               href="mailto:saksar_aroma@mail.ru"
@@ -97,7 +100,8 @@ function ContactsPage() {
               saksar_aroma@mail.ru
             </a>
             <br />
-            Россия, Москва, Ленинградский проспект д.47 <br /> стр.3, подъезд №3
+            Россия, Москва, Ленинградский проспект д.<span>47</span> <br /> стр.
+            <span>3</span>, подъезд №<span>3 </span>
             БЦ «Авион» (метро Аэропорт)
           </p>
           <div className="contacts_icons">

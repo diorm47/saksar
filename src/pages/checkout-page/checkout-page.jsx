@@ -53,7 +53,7 @@ const CheckoutPage = () => {
                 <img src={item.cart_img} alt={item.cart_img} />
                 <div className="checkout_item_descrip">
                   <h3 className="ch_item_name">
-                    {item.type} - {item.name}
+                    {item.type} {item.name}
                   </h3>
 
                   <p className="ch_count">Количество - {item.count} штук</p>
@@ -72,22 +72,17 @@ const CheckoutPage = () => {
           <div className="checkout_form">
             <form ref={form} onSubmit={sendEmail}>
               <div className="name_input">
-                <input
-                  placeholder="Ваше имя"
-                  required
-                  name="name"
-                  type="text"
-                />
+                <input placeholder="ИФО" required name="name" type="text" />
               </div>
               <div className="phone_input">
-                <input name="phone_number" required placeholder="Ваш телефон" />
+                <input name="phone_number" required placeholder="ТЕЛЕФОН" />
               </div>
               <div className="email_input">
                 <input
                   type="email"
                   name="email"
                   required
-                  placeholder="Ваш e-mail"
+                  placeholder="E-MAIL"
                 />
               </div>
               <div className="product_name_input">
@@ -96,9 +91,19 @@ const CheckoutPage = () => {
                   required
                   name="product_name"
                   defaultValue={incart.map(
-                    (el) => `${"  "} ${el.type} - ${el.name} ${el.count} штук`
+                    (el) => `${"  "} ${el.type} ${el.name} ${el.count} штук`
                   )}
                 />
+              </div>
+              <div className="del_method_check">
+                <p>предпочитаемый способ доставки</p>
+                <select name="delivery_method" id="delivery_method">
+                  <option value="pickup">самовывоз</option>
+                  <option value="courier">курьер</option>
+                  <option value="boxberry">boxberry</option>
+                  <option value="sdek">сдэк</option>
+                  <option value="russian_post">почта россии</option>
+                </select>
               </div>
 
               <div className="adress_input">
@@ -106,7 +111,14 @@ const CheckoutPage = () => {
                   type="text"
                   name="adress"
                   required
-                  placeholder="Ваш адресс"
+                  placeholder="АДРЕСС ДОСТАВКИ"
+                />
+              </div>
+              <div className="contacts_comment_input">
+                <textarea
+                  placeholder="КОММЕНТАРИЙ К ЗАКАЗУ"
+                  name="comments"
+                  required
                 />
               </div>
               <div className="polices_check">
