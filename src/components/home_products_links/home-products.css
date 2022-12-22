@@ -40,6 +40,10 @@
   transition: all 0.4s ease;
   color: #000000;
 }
+.home_product_cart_title span {
+  color: #000000;
+  font-size: 12px;
+}
 .home_product_cart_title span:hover {
   transition: all 0.4s ease;
   text-decoration: underline;
