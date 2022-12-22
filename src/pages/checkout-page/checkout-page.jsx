@@ -56,10 +56,10 @@ const CheckoutPage = () => {
                     {item.type} {item.name}
                   </h3>
 
-                  <p className="ch_count">Количество {item.count} штук</p>
+                  <p className="ch_count">Количество: {item.count} </p>
 
                   <h4 className="ch_total_price">
-                   Итого - {" "}
+                    Итого: {" "}
                     {new Intl.NumberFormat("ru-RU").format(
                       item.count * item.price
                     )}{" "}
