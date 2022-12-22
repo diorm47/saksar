@@ -38,7 +38,7 @@ function App() {
   return (
     <>
       <NavBar />
-      <Loader />
+
       <div className="app_content">
         <Suspense fallback={<Loader />}>
           <Routes>
