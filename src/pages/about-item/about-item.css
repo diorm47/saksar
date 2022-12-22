@@ -2,6 +2,7 @@
   width: 1547px;
   margin: 0 auto;
   padding-top: 150px;
+  padding-bottom: 50px;
 }
 
 .about_item_content {
@@ -42,6 +43,7 @@
   line-height: 40px;
   text-transform: uppercase;
   color: #000000;
+  font-family: serif;
 }
 .about_right_block {
   width: 55%;
@@ -74,6 +76,7 @@
   text-transform: uppercase;
   color: #000000;
   margin-top: 30px;
+  font-family: serif;
 }
 
 .about_add_to_cart button {

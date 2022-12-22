@@ -104,6 +104,11 @@ textarea {
   color: #625f5f;
   text-indent: 10px;
 }
+.product_name_input {
+  visibility: hidden;
+  position: absolute;
+  z-index: -1;
+}
 
 @media only screen and (max-width: 880px) {
   .checkout_page {

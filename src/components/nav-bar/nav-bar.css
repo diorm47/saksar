@@ -287,4 +287,7 @@ nav {
   .selected_length p {
     font-size: 12px;
   }
+  .nav_logo p {
+    letter-spacing: 1px;
+  }
 }

@@ -104,9 +104,9 @@ function ContactsPage() {
             <span>3</span>, подъезд №<span>3 </span>
             БЦ «Авион» (метро Аэропорт)
           </p>
-          <div className="contacts_icons">
+          {/* <div className="contacts_icons">
             <img src={vk_icon} alt="vk_icon" />
-          </div>
+          </div> */}
         </div>
       </div>
       <div className="company_documents">

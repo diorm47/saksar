@@ -4,7 +4,7 @@
   padding-top: 100px;
   display: flex;
   align-items: center;
-
+  padding-bottom: 40px;
   flex-direction: column;
 }
 .payment_delivery_wrapper {

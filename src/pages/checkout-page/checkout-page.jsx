@@ -56,10 +56,10 @@ const CheckoutPage = () => {
                     {item.type} {item.name}
                   </h3>
 
-                  <p className="ch_count">Количество - {item.count} штук</p>
+                  <p className="ch_count">Количество {item.count} штук</p>
 
                   <h4 className="ch_total_price">
-                    Цена за этот товар -{" "}
+                   Итого - {" "}
                     {new Intl.NumberFormat("ru-RU").format(
                       item.count * item.price
                     )}{" "}
@@ -72,7 +72,7 @@ const CheckoutPage = () => {
           <div className="checkout_form">
             <form ref={form} onSubmit={sendEmail}>
               <div className="name_input">
-                <input placeholder="ИФО" required name="name" type="text" />
+                <input placeholder="ФИО" required name="name" type="text" />
               </div>
               <div className="phone_input">
                 <input name="phone_number" required placeholder="ТЕЛЕФОН" />
@@ -111,7 +111,7 @@ const CheckoutPage = () => {
                   type="text"
                   name="adress"
                   required
-                  placeholder="АДРЕСС ДОСТАВКИ"
+                  placeholder="АДРЕС ДОСТАВКИ"
                 />
               </div>
               <div className="contacts_comment_input">

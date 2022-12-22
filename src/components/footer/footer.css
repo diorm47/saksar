@@ -1,7 +1,8 @@
 footer {
   width: 100%;
-  padding: 100px;
+  padding: 50px;
   padding-bottom: 40px;
+  background: #ffeade;
 }
 
 .footer_wrapper {
@@ -149,5 +150,8 @@ footer {
   }
   .footer_logo {
     margin-bottom: 40px;
+  }
+  .footer_logo p {
+    letter-spacing: 1px;
   }
 }
