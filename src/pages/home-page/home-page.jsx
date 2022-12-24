@@ -40,7 +40,7 @@ function HomePage() {
               <h1>ИСТОРИЯ БРЕНДА</h1>
             </i>
 
-            <i>
+       
               <p>
                 Здравствуй! <br /> Я, Венера Какорина, основатель бренда SAKSAR
                 AROMA HOME COLLECTION.
@@ -66,7 +66,7 @@ function HomePage() {
                 природе и своему ремеслу. Не сомневайся, что найдёшь здесь по
                 истине экологичный продукт.
               </p>
-            </i>
+         
             <div className="founder_authograph">
               <img src={authograph} alt="authograph" />
             </div>

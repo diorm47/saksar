@@ -2,7 +2,7 @@
   width: 1547px;
   margin: 0 auto;
   padding-top: 100px;
-  padding-bottom: 40px;
+
 }
 
 .cart_navigation p {
@@ -176,7 +176,6 @@
   text-align: center;
   color: #ffffff;
   cursor: pointer;
-  margin-bottom: 40px;
   transition: all 0.4s ease;
   border: none;
 }

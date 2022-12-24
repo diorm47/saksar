@@ -3,6 +3,7 @@ footer {
   padding: 50px;
   padding-bottom: 40px;
   background: #ffeade;
+  margin-top: 60px;
 }
 
 .footer_wrapper {
@@ -51,14 +52,16 @@ footer {
   line-height: 26px;
   text-transform: uppercase;
   color: #000000;
+  opacity: 0.58;
   transition: all 0.5s ease;
 }
 .footer_nav_list .footer_nav_menu_item p:hover {
   transition: all 0.5s ease;
-  opacity: 0.58;
+  opacity: 1;
 }
 .footer_nav_list .vertical_line {
   font-size: 18px;
+  opacity: 0.58;
 }
 
 .footer_links .footer_link_items {

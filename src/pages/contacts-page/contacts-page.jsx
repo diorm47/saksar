@@ -1,7 +1,7 @@
 import emailjs from "emailjs-com";
 import React, { useRef, useState } from "react";
 import { NavLink } from "react-router-dom";
-import vk_icon from "../../assets/icons/vk_icon.png";
+// import vk_icon from "../../assets/icons/vk_icon.png";
 import Footer from "../../components/footer/footer";
 import Snackbar from "../../components/snackbar/snackbar";
 import "./contacts-page.css";

@@ -4,6 +4,7 @@ import "./nav-bar.css";
 import burger_menu from "../../assets/icons/menu_icon.png";
 import close_menu from "../../assets/icons/menu_close.png";
 import basketIcon from "../../assets/icons/basket-icon.png";
+import logo from "../../assets/icons/logo.png";
 import { useSelector } from "react-redux";
 
 function NavBar() {
@@ -30,6 +31,7 @@ function NavBar() {
           </div>
           <NavLink to="/">
             <div className="nav_logo">
+              {/* <img src={logo} alt="" /> */}
               <h1>saksar</h1>
               <p>aroma home collection</p>
             </div>

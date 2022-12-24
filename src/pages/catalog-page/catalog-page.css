@@ -2,7 +2,6 @@
   width: 100%;
   height: 100%;
   padding-top: 80px;
-  padding-bottom: 50px;
 }
 .catalog_wrapper {
   width: 1547px;
@@ -24,7 +23,7 @@
   grid-gap: 15px;
 }
 .catalog_application {
-  margin-top: 200px;
+  margin-top: 80px;
 }
 
 @media only screen and (max-width: 1620px) {

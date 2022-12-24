@@ -22,10 +22,6 @@ nav {
   margin: 0 10px;
   font-size: 18px;
 }
-.nav_left_items .active,
-.nav_right_items .active {
-  opacity: 0.5;
-}
 
 .nav_menu_item p {
   font-weight: 700;
@@ -34,9 +30,10 @@ nav {
   text-transform: uppercase;
   color: #000000;
   transition: all 0.5s ease;
+  opacity: 0.5;
 }
 .nav_menu_item p:hover {
-  opacity: 0.58;
+  opacity: 1;
   transition: all 0.5s ease;
 }
 
@@ -62,7 +59,7 @@ nav {
   font-weight: 600;
   font-size: 14px;
   line-height: 100%;
-  letter-spacing: 1.7px;
+  letter-spacing: 1.5px;
   text-transform: uppercase;
   color: #000000d1;
   align-items: center;
@@ -162,8 +159,14 @@ nav {
   transition: all 0.5s ease;
   top: -1100px;
 }
-.nav_mobilie_menu .active {
-  opacity: 0.5;
+.nav_mobilie_menu .active p {
+  color: #000000 !important;
+  opacity: 1 !important;
+}
+.nav_left_items .active p,
+.nav_right_items .active p {
+  color: #000000 !important;
+  opacity: 1 !important;
 }
 
 @media only screen and (max-width: 1720px) {

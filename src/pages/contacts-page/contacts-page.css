@@ -138,6 +138,7 @@ a {
   width: 1081px;
   margin: 0 auto;
   padding: 35px 0 40px;
+  padding-bottom: 0;
 }
 
 .company_documents p {
@@ -250,6 +251,7 @@ a {
   }
   .company_documents {
     padding: 30px;
+    padding-bottom: 0;
   }
   .company_documents p {
     font-size: 18px;

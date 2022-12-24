@@ -1,6 +1,7 @@
 .checkout_wrapper {
   width: 100%;
   padding: 60px 30px 40px;
+  padding-bottom: 0;
 }
 
 .checkout_title h1 {

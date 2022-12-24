@@ -1,8 +1,4 @@
-@font-face {
-  font-family: "Savoye Let";
-  src: local("Savoye Let"), url(../../assets//fonts/savoyelet.ttf) format("ttf");
-}
-
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap");
 .header_wrapper {
   width: 100%;
   display: flex;
@@ -86,9 +82,9 @@
 }
 
 .history_brand_text p {
-  font-family: "Savoye Let";
+  font-family: 'Playfair Display', serif;
   font-weight: 500;
-  font-size: 24px;
+  font-size: 20px;
   line-height: 150%;
   color: #000000;
   margin-bottom: 35px;
@@ -97,7 +93,7 @@
 .founder_authograph {
   position: absolute;
   right: -90px;
-  bottom: 30px;
+  bottom: 0px;
 }
 
 .home_products {
@@ -146,7 +142,7 @@
   .founder_authograph {
     position: absolute;
     right: 0;
-    bottom: 100px;
+    bottom: 40px;
   }
 }
 @media only screen and (max-width: 1416px) {
@@ -283,7 +279,7 @@
     margin-bottom: 20px;
   }
   .history_brand_text p {
-    font-size: 26px;
+    font-size: 20px;
   }
   .header_right_block h1 {
     font-size: 17px;
