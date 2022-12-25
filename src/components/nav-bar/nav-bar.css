@@ -45,24 +45,8 @@ nav {
   flex-direction: column;
   justify-content: center;
 }
-.nav_logo h1 {
-  font-family: "Cormorant Garamond";
-  font-weight: 550;
-  font-size: 48px;
-  letter-spacing: 0.155em;
-  text-transform: uppercase;
-  color: #000000;
-  line-height: 100%;
-}
-.nav_logo p {
-  font-family: "Cormorant Garamond";
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 100%;
-  letter-spacing: 1.5px;
-  text-transform: uppercase;
-  color: #000000d1;
-  align-items: center;
+.nav_logo svg {
+  width: 210px;
 }
 
 .nav_basket {
@@ -227,12 +211,6 @@ nav {
     right: 17%;
   }
 
-  .nav_logo h1 {
-    font-size: 35px;
-  }
-  .nav_logo p {
-    font-size: 9px;
-  }
   .founder_img {
     width: 100%;
   }
@@ -258,6 +236,9 @@ nav {
 @media only screen and (max-width: 500px) {
   .nav_basket {
     right: 20%;
+  }
+  .nav_logo svg {
+    width: 120px;
   }
 }
 
@@ -289,8 +270,5 @@ nav {
   }
   .selected_length p {
     font-size: 12px;
-  }
-  .nav_logo p {
-    letter-spacing: 1px;
   }
 }

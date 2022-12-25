@@ -2,6 +2,7 @@ import React from "react";
 import "./footer.css";
 
 import { NavLink } from "react-router-dom";
+import { ReactComponent as Logo } from "../../assets/icons/logo.svg";
 
 function Footer() {
   return (
@@ -10,8 +11,7 @@ function Footer() {
         <div className="footer_nav">
           <NavLink to="/">
             <div className="footer_logo">
-              <h1>saksar</h1>
-              <p>aroma home collection</p>
+              <Logo />
             </div>
           </NavLink>
           <div className="footer_nav_list">

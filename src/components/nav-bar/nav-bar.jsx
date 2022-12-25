@@ -4,8 +4,10 @@ import "./nav-bar.css";
 import burger_menu from "../../assets/icons/menu_icon.png";
 import close_menu from "../../assets/icons/menu_close.png";
 import basketIcon from "../../assets/icons/basket-icon.png";
-import logo from "../../assets/icons/logo.png";
+
 import { useSelector } from "react-redux";
+
+import { ReactComponent as Logo } from "../../assets/icons/logo.svg";
 
 function NavBar() {
   const inCart = useSelector((state) => state.cart.cart);
@@ -31,9 +33,7 @@ function NavBar() {
           </div>
           <NavLink to="/">
             <div className="nav_logo">
-              {/* <img src={logo} alt="" /> */}
-              <h1>saksar</h1>
-              <p>aroma home collection</p>
+              <Logo />
             </div>
           </NavLink>
           <div className="nav_right_items">
