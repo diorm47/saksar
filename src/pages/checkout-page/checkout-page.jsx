@@ -59,7 +59,7 @@ const CheckoutPage = () => {
                   <p className="ch_count">Количество: {item.count} </p>
 
                   <h4 className="ch_total_price">
-                    Итого: {" "}
+                    Итого:{"  "}
                     {new Intl.NumberFormat("ru-RU").format(
                       item.count * item.price
                     )}{" "}
@@ -98,27 +98,27 @@ const CheckoutPage = () => {
               <div className="del_method_check">
                 <p>предпочитаемый способ доставки</p>
                 <select name="delivery_method" id="delivery_method">
-                  <option value="pickup">самовывоз</option>
-                  <option value="courier">курьер</option>
-                  <option value="boxberry">boxberry</option>
-                  <option value="sdek">сдэк</option>
-                  <option value="russian_post">почта россии</option>
+                  <option value="Самовывоз">самовывоз</option>
+                  <option value="Курьер">курьер</option>
+                  <option value="Boxberry">boxberry</option>
+                  <option value="СДЭК">сдэк</option>
+                  <option value="Почта России">почта россии</option>
                 </select>
               </div>
 
               <div className="adress_input">
                 <textarea
                   type="text"
-                  name="adress"
+                 
                   required
-                  placeholder="АДРЕС ДОСТАВКИ"
+                  placeholder="адресс доставки"
+                  name="adress_name"
                 />
               </div>
               <div className="contacts_comment_input">
                 <textarea
-                  placeholder="КОММЕНТАРИЙ К ЗАКАЗУ"
-                  name="comments"
-                  required
+                  placeholder="комментарии к заказу"
+                  name="comments_area"
                 />
               </div>
               <div className="polices_check">

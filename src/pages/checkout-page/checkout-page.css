@@ -70,6 +70,7 @@ textarea {
   font-size: 18px;
   margin-bottom: 18px;
   padding: 10px;
+  text-transform: uppercase;
 }
 .checkout_form form .submit_btn {
   text-indent: 0;
