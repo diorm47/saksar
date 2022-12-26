@@ -17,7 +17,8 @@
 }
 .footer_form form {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 .footer_form form input {
@@ -37,14 +38,6 @@
   color: #625f5f;
   font-family: "Libre Baskerville";
 }
-.footer_form form div {
-  display: flex;
-  flex-direction: column;
-}
-.footer_form form div span {
-  color: red;
-  margin-top: 5px;
-}
 
 .footer_form form .submit_btn {
   text-indent: 0;
@@ -62,10 +55,7 @@
   background: #000000c2;
   transition: all 0.4s ease;
 }
-.footer_form form {
-  flex-wrap: wrap;
-  justify-content: space-around;
-}
+
 .footer_form form div {
   margin-bottom: 20px;
 }
@@ -85,7 +75,6 @@
   align-items: center;
   justify-content: center;
   margin-top: 20px;
-  display: none;
 }
 .item_center_text p {
   text-align: center;
@@ -94,14 +83,6 @@
 @media only screen and (max-width: 1540px) {
   .footer_form {
     width: 100%;
-  }
-}
-@media only screen and (max-width: 1250px) {
-  .footer_form .contacts_policy_area {
-    display: none;
-  }
-  .item_center_text {
-    display: flex;
   }
 }
 

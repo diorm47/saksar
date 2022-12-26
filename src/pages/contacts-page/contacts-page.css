@@ -88,12 +88,13 @@
 }
 
 .contacts_cart {
-  width: 100%;
+  max-width: 1600px;
   background: url(../../assets//images/cart.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   padding: 100px 0 135px 230px;
+  margin: 0 auto;
 }
 
 .contacts_block {
@@ -111,7 +112,7 @@
   color: #000000;
 }
 .contacts_block p,
-a {
+.contacts_block a {
   font-weight: 400;
   font-size: 15px;
   line-height: 170.8%;
@@ -177,13 +178,13 @@ a {
   margin: 0 auto !important;
 }
 .contacts_form .contacts_policy_area p,
-a {
+.contacts_form .contacts_policy_area a {
   font-size: 17px;
   margin: 0;
   padding: 0;
 }
 
-.contacts_form .contacts_policy_area p a {
+.contacts_form .contacts_policy_area a {
   color: blue;
 }
 .company_documents span {
@@ -324,7 +325,7 @@ a {
     padding: 10px 0;
   }
   .contacts_form_wrapper .contacts_policy_area p,
-  a {
+  .contacts_form_wrapper .contacts_policy_area a {
     font-size: 9px;
     line-height: 140%;
   }

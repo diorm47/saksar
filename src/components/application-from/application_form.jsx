@@ -65,12 +65,6 @@ function ApplicationForm() {
               placeholder="Ваш e-mail"
             />
           </div>
-          <div className="contacts_policy_area">
-            <p>
-              Отправляя форму, вы даете свое согласие на обработку
-              <NavLink to="/policy"> персональных данных</NavLink>
-            </p>
-          </div>
 
           <input
             className="submit_btn"

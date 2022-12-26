@@ -1,7 +1,8 @@
 .checkout_wrapper {
-  width: 100%;
+  max-width: 1547px;
   padding: 60px 30px 40px;
   padding-bottom: 0;
+  margin: 0 auto;
 }
 
 .checkout_title h1 {
@@ -105,7 +106,7 @@ textarea {
   color: #625f5f;
   text-indent: 10px;
 }
-.product_name_input {
+.checkout_form .product_name_input {
   visibility: hidden;
   position: absolute;
   z-index: -1;
