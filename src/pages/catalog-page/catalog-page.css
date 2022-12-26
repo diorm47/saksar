@@ -29,8 +29,8 @@
 @media only screen and (max-width: 1620px) {
   .catalog_wrapper {
     width: 100%;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
   .catalog_items {
     grid-template-columns: repeat(3, 1fr);

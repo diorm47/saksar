@@ -78,6 +78,12 @@ function ApplicationForm() {
             value="Отправить заявку"
           />
         </form>
+        <div className="item_center_text">
+          <p>
+            Отправляя форму, вы даете свое согласие на обработку
+            <NavLink to="/policy"> персональных данных</NavLink>
+          </p>
+        </div>
       </div>
       {!snackbar || <Snackbar props={snackbarText} />}
     </>

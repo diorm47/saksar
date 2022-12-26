@@ -9,7 +9,7 @@ function CatalogPage() {
   React.useEffect(() => {
     document.title = `Каталог товаров`;
   }, []);
-  
+
   return (
     <>
       <div className="catalog_page">

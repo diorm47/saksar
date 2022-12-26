@@ -84,7 +84,7 @@
 .history_brand_text p {
   font-family: 'Playfair Display', serif;
   font-weight: 500;
-  font-size: 20px;
+  font-size: 24px;
   line-height: 150%;
   color: #000000;
   margin-bottom: 35px;
@@ -145,6 +145,18 @@
     bottom: 40px;
   }
 }
+@media only screen and (max-width: 1570px) {
+  .history_brand_text p {
+    font-size: 22px;
+  }
+  
+
+}
+@media only screen and (max-width: 1460px) {
+  .history_brand_text p {
+    font-size: 21px;
+  }
+}
 @media only screen and (max-width: 1416px) {
   .founder_img {
     width: 40%;
@@ -152,17 +164,17 @@
   }
 
   .history_brand_text p {
-    font-size: 22px;
+    font-size: 20px;
   }
 }
-@media only screen and (max-width: 1290px) {
+@media only screen and (max-width: 1350px) {
   .founder_img {
     width: 35%;
     margin-right: 20px;
   }
 
   .history_brand_text p {
-    font-size: 20px;
+    font-size: 19px;
   }
   .founder_authograph {
     bottom: 0px;
@@ -182,6 +194,9 @@
   }
   .home_products_title h3 {
     text-align: center;
+  }
+  .history_brand_text p {
+    font-size: 17px;
   }
 }
 @media only screen and (max-width: 1140px) {
@@ -226,6 +241,9 @@
   .history_brand_text {
     padding: 0 15px;
     width: 100%;
+  }
+  .history_brand_text p {
+    font-size: 19px;
   }
   .history_brand_wrapper {
     padding-right: 0px;
