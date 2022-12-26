@@ -1,4 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap");
+@font-face {
+  font-family: history;
+  src: url(../../assets/fonts/history.ttf);
+}
 .header_wrapper {
   width: 100%;
   display: flex;
@@ -82,7 +85,7 @@
 }
 
 .history_brand_text p {
-  font-family: 'Playfair Display', serif;
+  font-family: history;
   font-weight: 500;
   font-size: 24px;
   line-height: 150%;
@@ -149,8 +152,6 @@
   .history_brand_text p {
     font-size: 22px;
   }
-  
-
 }
 @media only screen and (max-width: 1460px) {
   .history_brand_text p {
