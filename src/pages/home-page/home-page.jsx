@@ -10,7 +10,7 @@ import "./home-page.css";
 
 function HomePage() {
   React.useEffect(() => {
-    document.title = `SAKSAR - домашняя коллекция ароматов.`;
+    document.title = `SAKSAR AROMA HOME COLLECTION`;
   }, []);
   return (
     <>
