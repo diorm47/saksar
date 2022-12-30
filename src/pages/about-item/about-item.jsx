@@ -1,10 +1,12 @@
 import React, { useState } from "react";
+import { useDispatch, useSelector } from "react-redux";
 import useSound from "use-sound";
 import playing_icon from "../../assets/icons/playing_icon.png";
 import stop_icon from "../../assets/icons/stop_icon.png";
 import Carousel from "../../components/carousel/carousel";
 import Footer from "../../components/footer/footer";
 import Snackbar from "../../components/snackbar/snackbar";
+import { addToCart } from "../../redux/cart-reducer";
 import "./about-item.css";
 
 function AboutItem() {
@@ -12,6 +14,8 @@ function AboutItem() {
   const [playing, setPlay] = useState(true);
   const [stoping, setStop] = useState(false);
   const [play, { stop }] = useSound(item.music, { volume: 1 });
+  const dispatch = useDispatch();
+  const inCart = useSelector((state) => state.cart.cart);
 
   React.useEffect(() => {
     document.title = `${item.type} - ${item.name}`;
@@ -21,14 +25,10 @@ function AboutItem() {
   const [snackbar, setSnackbar] = useState(false);
 
   const addToCartt = (data) => {
-    const isItemInStorage = inCartStorage.some((item) => item.id === data.id);
-    let inCartItems = [];
-    if (!isItemInStorage) {
-      inCartItems.unshift(data);
-      inCartItems = inCartItems.concat(
-        JSON.parse(localStorage.getItem("cartItems") || "[]")
-      );
-      localStorage.setItem("cartItems", JSON.stringify(inCartItems));
+    const isItemInCart = inCart.some((item) => item.id === data.id);
+    if (!isItemInCart) {
+      dispatch(addToCart(data));
+
       setSnackbar(true);
       setTimeout(() => {
         setSnackbar(false);
@@ -173,7 +173,7 @@ function AboutItem() {
             </div>
             <div className="about_add_to_cart">
               <button onClick={() => addToCartt(item)}>
-                {inCartStorage.some((data) => data.id === item.id)
+                {inCart.some((data) => data.id === item.id)
                   ? "В корзине"
                   : "В корзину"}
               </button>
