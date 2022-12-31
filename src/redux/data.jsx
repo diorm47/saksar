@@ -2,6 +2,7 @@ export const items = [
   {
     id: 1,
     name: 111,
+    slug: 111,
     type: "Аромадиффузор",
     music: "/musics/111.mp3",
     price: 1990,
@@ -19,6 +20,7 @@ export const items = [
   {
     id: 2,
     name: 222,
+    slug: 222,
     type: "Аромадиффузор",
     music: "/musics/222.m4a",
     cart_img: "/product_images/222.jpg",
@@ -36,6 +38,7 @@ export const items = [
   {
     id: 3,
     name: 333,
+    slug: 333,
     type: "Аромадиффузор",
     music: "/musics/333.m4a",
     cart_img: "/product_images/333.jpg",
@@ -53,6 +56,7 @@ export const items = [
   {
     id: 4,
     name: 444,
+    slug: 444,
     type: "Аромадиффузор",
     music: "/musics/444.m4a",
     cart_img: "/product_images/444.jpg",
@@ -68,6 +72,7 @@ export const items = [
   {
     id: 5,
     name: 555,
+    slug: 555,
     type: "Аромадиффузор",
     music: "/musics/555.mp3",
     cart_img: "/product_images/555.jpg",
@@ -85,6 +90,7 @@ export const items = [
   {
     id: 6,
     name: 666,
+    slug: 666,
     type: "Аромадиффузор",
     music: "/musics/666.mp3",
     cart_img: "/product_images/666.jpg",
@@ -101,6 +107,7 @@ export const items = [
   {
     id: 7,
     name: 777,
+    slug: 777,
     type: "Аромадиффузор",
     music: "/musics/777.mp3",
     cart_img: "/product_images/777.jpg",
@@ -116,6 +123,7 @@ export const items = [
   {
     id: 8,
     name: 888,
+    slug: 888,
     type: "Аромадиффузор",
     music: "/musics/888.m4a",
     cart_img: "/product_images/888.jpg",
@@ -132,6 +140,7 @@ export const items = [
   {
     id: 9,
     name: 999,
+    slug: 999,
     type: "Аромадиффузор",
     music: "/musics/999.mp3",
     cart_img: "/product_images/999.jpg",
@@ -152,6 +161,7 @@ export const items = [
     id: 10,
     name: "Баттер",
     type: "Баттер",
+    slug: "butter",
     cart_img: "/product_images/Баттер.jpg",
     about_img: "/product_images/Баттер.jpg",
     price: 1490,
@@ -167,6 +177,7 @@ export const items = [
   {
     id: 11,
     name: "Кофемагия",
+    slug: "scrab-kofemagiya",
     type: "Скраб для тела",
     cart_img: "/product_images/Кофемагия.jpg",
     about_img: "/product_images/Кофемагия.jpg",
@@ -183,6 +194,7 @@ export const items = [
   {
     id: 12,
     name: "Ментоловое очищение",
+    slug: "scrab-mentolovoe-ochisheniye",
     type: "Скраб для тела",
     cart_img: "/product_images/Ментоловое очищение.jpg",
     about_img: "/product_images/Ментоловое очищение.jpg",
@@ -199,6 +211,7 @@ export const items = [
   {
     id: 13,
     name: "Малиновое наслаждение",
+    slug: "scrab-malinovoe-naslajdeniye",
     type: "Скраб для тела",
     cart_img: "/product_images/Малиновое наслаждение.jpg",
     about_img: "/product_images/Малиновое наслаждение.jpg",
@@ -215,6 +228,7 @@ export const items = [
   {
     id: 14,
     name: "Кофемагия",
+    slug: "spa-kofemagiya",
     type: "Spa-набор для тела",
     cart_img: "/product_images/spa-Кофемагия.jpg",
     about_img: "/product_images/spa-Кофемагия.jpg",
@@ -235,6 +249,7 @@ export const items = [
   {
     id: 15,
     name: "Ментоловое очищение",
+    slug: "spa-mentolovoe-ochisheniye",
     type: "Spa-набор для тела",
     cart_img: "/product_images/spa-Ментоловое очищение.jpg",
     about_img: "/product_images/spa-Ментоловое очищение.jpg",
@@ -255,6 +270,7 @@ export const items = [
   {
     id: 16,
     name: "Малиновое наслаждение",
+    slug: "spa-malinovoe-naslajdeniye",
     type: "Spa-набор для тела",
     cart_img: "/product_images/spa-Малиновое наслаждени.jpg",
     about_img: "/product_images/spa-Малиновое наслаждени.jpg",
@@ -275,6 +291,7 @@ export const items = [
   {
     id: 17,
     name: "Ассорти скрабов",
+    slug: "spa-assorti-srabov",
     type: "Spa-набор для тела",
     cart_img: "/product_images/spa-Ассорти скрабов.jpg",
     about_img: "/product_images/spa-Ассорти скрабов.jpg",

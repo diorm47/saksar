@@ -51,7 +51,7 @@ function App() {
             <Route path="/spa-sets" element={<SpaSetsPage />} />
             <Route path="/diffusers" element={<DiffusorsPage />} />
             <Route path="/cart" element={<CartPage />} />
-            <Route path="/about-item/*" element={<AboutItem />} />
+            <Route path="/about-item/:name" element={<AboutItem />} />
             <Route path="/checkout" element={<CheckoutPage />} />
             <Route path="/policy" element={<PolicyPage />} />
 

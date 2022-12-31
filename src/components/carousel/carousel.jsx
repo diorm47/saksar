@@ -60,11 +60,7 @@ function Carousel() {
     }
   };
   const aboutItem = (item) => {
-    if (!localStorage.getItem("currentItem")) {
-      localStorage.setItem("currentItem", JSON.stringify(item));
-    } else localStorage.setItem("currentItem", JSON.stringify(item));
-
-    navigate(`/about-item/${item.name}`);
+    navigate(`/about-item/${item.slug}`);
     window.location.reload();
   };
   const settings = {

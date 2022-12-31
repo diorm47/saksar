@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
+import { useParams } from "react-router-dom";
 import useSound from "use-sound";
 import playing_icon from "../../assets/icons/playing_icon.png";
 import stop_icon from "../../assets/icons/stop_icon.png";
@@ -7,10 +8,12 @@ import Carousel from "../../components/carousel/carousel";
 import Footer from "../../components/footer/footer";
 import Snackbar from "../../components/snackbar/snackbar";
 import { addToCart } from "../../redux/cart-reducer";
+import { items } from "../../redux/data";
 import "./about-item.css";
 
 function AboutItem() {
-  const item = JSON.parse(localStorage.getItem("currentItem"));
+  const params = useParams();
+  const item = items.find((i) => i.slug == params.name);
   const [playing, setPlay] = useState(true);
   const [stoping, setStop] = useState(false);
   const [play, { stop }] = useSound(item.music, { volume: 1 });
@@ -21,7 +24,6 @@ function AboutItem() {
     document.title = `${item.type} - ${item.name}`;
   }, []);
 
-  const inCartStorage = JSON.parse(localStorage.getItem("cartItems")) || [];
   const [snackbar, setSnackbar] = useState(false);
 
   const addToCartt = (data) => {
